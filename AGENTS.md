@@ -47,11 +47,19 @@ New notes also carry `type`: `draft`, `final`, `spec`, `decision`, `source`, `lo
 
 ## Writing manuscript sections
 
-1. Follow the section order in [[Manuscript Outline - BSIT (Table of Contents)]] and the writing rules in [[Guidelines - Writing Chapters 1-3]].
+1. Follow the section order in [[Manuscript Outline - BSIT (Table of Contents)]] and [[Guidelines - Writing Chapters 1-3]], and write every section by [[Writing Rules]].
 2. New chapter notes start from `Templates/Manuscript Section.md` and go in `Manuscript/`.
 3. When a section is drafted, tick its box in the outline and link it there.
 4. When revising an `unrevised` note, resolve each bracketed adviser comment, then set `status: revised`.
-5. Word exports go in `Manuscript/` beside their note, named `<Chapter> (Revised).docx`. Format: US Letter, 1.5 in left margin, 1 in top/right/bottom, Times New Roman 12 pt, double-spaced, justified, APA 7 references with a 0.5 in hanging indent.
+5. Export to Word with `node tools/build-docx.js "Manuscript/<note>.md"`. The file lands in `Manuscript/` beside its note as `<Chapter> (Revised).docx`, in the [[D-005 Manuscript Format]]. The note's exported text runs from its `# CHAPTER` heading to the first `---` line.
+
+## Tools
+
+Run from the vault root. First time on a machine: `npm install --prefix tools` and `git config core.hooksPath .githooks`.
+
+- `node tools/check-vault.js` checks links and embeds, frontmatter `status`/`type`, decision IDs, source URLs, and that every bibliography entry has a `verified` source note. It prints `status: success|warning|error`, one `ERROR`/`WARN` line per problem with its fix, and exits 1 on errors.
+- The pre-commit hook runs the same check with `--staged`, which also blocks edits to `Final/`. Set `ALLOW_FINAL_EDIT=1` only when the researcher supplies a new final version.
+- `node tools/build-docx.js` exports a chapter note to Word (step 5 above).
 
 ## Git commits
 

@@ -33,6 +33,11 @@ Newest entry first. Each entry records what was done, what was decided, and what
 - Added `Sources/` with one verified note per Chapter I reference.
 - Added `Decision` and `Source` templates, and described the new folders and statuses in `AGENTS.md`.
 
+**Vault tooling**
+- Saved the Chapter I prompt rules as [[Writing Rules]] for all chapters.
+- Added `tools/build-docx.js` (Word export in the D-005 format) and `tools/check-vault.js` (links, frontmatter, decisions, verified citations, read-only `Final/`).
+- Added a versioned pre-commit hook in `.githooks/` that runs the check. Tested: it catches bad status, broken links, unverified citations, out-of-range years and staged `Final/` edits.
+
 **Game repo** (`D:\LAMBERTO\divi-rush`, `dainty334/DiviRush`)
 - Added a project guide and project settings in two commits on `main` (`98334ce`, `f49ba2e`). The settings give access to this vault and turn off co-author lines.
 
