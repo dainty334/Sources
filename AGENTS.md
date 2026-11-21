@@ -6,7 +6,7 @@ tags: [divirush, index]
 
 # DiviRush Vault
 
-Official title: **DIVIRUSH: An Adaptive Quick-Tap Educational Game for Enhancing Grade 4 Learner's Division Fact Recall** (settled by the user; the pre-proposal's *Division Duel* title is superseded).
+Official title: **DIVIRUSH: An Adaptive Quick-Tap Educational Game for Enhancing Grade 4 Learner's Division Fact Recall** ([[D-001 Official Title]]).
 
 This vault is the **primary source** for the DIVIRUSH capstone: an adaptive quick-tap Android game (Godot) for Grade 4 division fact recall at Baluan Elementary School. Ground every claim about the project in a note here, and cite the note by its `[[wikilink]]`.
 
@@ -16,11 +16,14 @@ This vault is the **primary source** for the DIVIRUSH capstone: an adaptive quic
 |---|---|---|
 | `Final/` | Approved documents (pre-proposal, survey tally) | Read-only. Change only when the user supplies a new final version. |
 | `Guidelines/` | School rules: the BSIT manuscript outline and the Chapters 1–3 writing guide | Read-only reference. |
-| `Manuscript/` | Chapter drafts, one note per chapter | Yes: drafting and revising happens here. |
+| `Manuscript/` | Chapter drafts, one note per chapter, and their Word exports | Yes: drafting and revising happens here. |
+| `Design/` | [[Game Spec]]: the single source of truth for what the game does | Yes, but only with values the user has decided. Leave undecided values marked OPEN. |
+| `Decisions/` | One note per decision, `D-001`, `D-002`, … | Add a note for every new decision or conflict. Change a settled one only when the user reverses it. |
+| `Sources/` | One note per cited reference: APA 7 entry, link, verified findings | Add a note before citing a new source. Record only facts checked against the source itself. |
 | `Templates/` | Note templates | Only to change the convention itself. |
 | `attachments/` | Images embedded with `![[name]]` | Add files; name them `<note-slug>-imgNN.<ext>`. |
 
-Start from [[Manuscript Outline - BSIT (Table of Contents)]]: it is the required manuscript structure and tracks which sections exist.
+Start from [[Manuscript Outline - BSIT (Table of Contents)]]: it is the required manuscript structure and tracks which sections exist. [[Progress Log]] records what each work session did, decided and left open; add a dated entry at the top after each session.
 
 ## Status
 
@@ -30,8 +33,17 @@ Every note carries `status` in its frontmatter:
 - `unrevised`: adviser-checked draft; bracketed text like `[already stated above]` is adviser feedback still to address.
 - `revised`: adviser feedback addressed, awaiting approval.
 - `reference`: rules and guidance, not project content.
+- `draft`: a spec still being filled in ([[Game Spec]]).
+- `open` / `settled`: a decision note waiting on the user, or decided.
+- `verified` / `unverified`: a source note checked, or not yet checked, against the original.
 
-A note's `source` field records the original file it came from. Keep it when revising.
+New notes also carry `type`: `draft`, `final`, `spec`, `decision`, `source`, `log` or `reference`. A note's `source` field records the original file it came from. Keep it when revising.
+
+## Where facts live
+
+- **Game behaviour** (levels, timer, scoring, platform): [[Game Spec]]. Code in the game repo and the manuscript chapters both follow it.
+- **Decisions and conflicts:** `Decisions/`. Check for an `open` decision before relying on a contested fact, and raise it with the user. Record each new decision from `Templates/Decision.md` with the next free ID.
+- **Citations:** `Sources/`. Cite only sources with a `verified` note; create one from `Templates/Source.md` first.
 
 ## Writing manuscript sections
 
@@ -39,6 +51,7 @@ A note's `source` field records the original file it came from. Keep it when rev
 2. New chapter notes start from `Templates/Manuscript Section.md` and go in `Manuscript/`.
 3. When a section is drafted, tick its box in the outline and link it there.
 4. When revising an `unrevised` note, resolve each bracketed adviser comment, then set `status: revised`.
+5. Word exports go in `Manuscript/` beside their note, named `<Chapter> (Revised).docx`. Format: US Letter, 1.5 in left margin, 1 in top/right/bottom, Times New Roman 12 pt, double-spaced, justified, APA 7 references with a 0.5 in hanging indent.
 
 ## Git commits
 
@@ -60,14 +73,3 @@ Naming files in messages:
 - **Game repo:** keep AI tools and agent files out of messages. Describe a `CLAUDE.md`, `AGENTS.md` or `.claude/` change as a project guide or project settings.
 - **Sources repo:** messages may name `AGENTS.md`, `CLAUDE.md` and other agent files directly.
 
-## Known conflicts between sources
-
-Status does not settle these. Raise them with the user before relying on either side:
-
-- **Survey topic**: [[Survey Tally (Final)]] asks about reading comprehension, not division.
-
-When the user settles one, update this list.
-
-Settled: the game is developed in GDScript, matching the pre-proposal. The C# mention in [[Chapter 1 - Introduction (Unrevised)]] is superseded.
-
-Settled: the gameplay combines the pre-proposal's timer, score and best score with Chapter 1's 15 levels in Easy (1–5), Medium (6–10) and Hard (11–15) stages.
