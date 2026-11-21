@@ -1,0 +1,10 @@
+{
+  "attachmentFolderPath": "attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Manuscript",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true,
+  "trashOption": "local",
+  "propertiesInDocument": "visible"
+}
