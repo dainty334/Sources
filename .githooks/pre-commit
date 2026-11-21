@@ -1,0 +1,3 @@
+#!/bin/sh
+# Block commits that break the vault's links, frontmatter, citations or Final/ notes.
+node tools/check-vault.js --staged
