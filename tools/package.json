@@ -1,0 +1,13 @@
+{
+  "name": "divirush-vault-tools",
+  "private": true,
+  "description": "Word export and integrity check for the DIVIRUSH vault.",
+  "scripts": {
+    "check": "node check-vault.js",
+    "export": "node build-docx.js"
+  },
+  "dependencies": {
+    "docx": "9.5.1",
+    "jszip": "3.10.1"
+  }
+}

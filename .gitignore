@@ -4,3 +4,6 @@
 
 # Obsidian local trash
 .trash/
+
+# Tool dependencies (reinstall with: npm install --prefix tools)
+tools/node_modules/
