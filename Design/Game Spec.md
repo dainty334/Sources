@@ -4,7 +4,7 @@ project: DIVIRUSH
 type: spec
 status: draft
 updated: 2026-11-22
-sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]", "[[D-011 Medium and Hard Wrong Answers]]"]
+sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]", "[[D-011 Medium and Hard Wrong Answers]]", "[[D-012 Episode 3 Levels]]"]
 tags: [divirush, design, spec]
 ---
 
@@ -103,7 +103,7 @@ Wrong-answer rules ([[D-010 Game Code Foundations]], [[D-011 Medium and Hard Wro
 - Each item stores the dividend, divisor, correct answer and its wrong answers, and which number is hidden (the quotient, or the divisor or dividend in Episode 4).
 - **Division range:** divisors 1–10 and quotients 1–10; every dividend is 100 or less and divides evenly ([[D-007 Division Range and Level Length]]).
 - **Items per Level:** 10.
-- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). Episode 2 has only two divisors, so it uses: Level 1 = ÷3, Level 2 = ÷4, Level 3 = ÷3 and ÷4 with answers 1–5, Level 4 = ÷3 and ÷4 with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts ([[D-011 Medium and Hard Wrong Answers]]). Episode 4's Level plan is **OPEN**. The item order is shuffled each play.
+- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). Episode 2 has only two divisors, so it uses: Level 1 = ÷3, Level 2 = ÷4, Level 3 = ÷3 and ÷4 with answers 1–5, Level 4 = ÷3 and ÷4 with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts ([[D-011 Medium and Hard Wrong Answers]]). Episode 3: Level 1 = ÷6, Level 2 = ÷7, Level 3 = ÷8, Level 4 = ÷9, Level 5 = mixed review of 2 ÷6, 3 ÷7, 3 ÷8 and 2 ÷9 facts ([[D-012 Episode 3 Levels]]). Episode 4's Level plan is **OPEN**. The item order is shuffled each play.
 - **Data file format:** Godot Resource (`.tres`), one item bank per Episode ([[D-010 Game Code Foundations]]).
 
 ## Scoring and saving
@@ -137,4 +137,4 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 
 - **Episode 4 Level plan** (all ÷1–÷10 plus missing-number items) and the wrong-answer range for items that hide the dividend (up to 100).
 
-The data file format was settled in [[D-010 Game Code Foundations]], and the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], on 2026-11-22.
+The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], and the Episode 3 Levels in [[D-012 Episode 3 Levels]], on 2026-11-22.
