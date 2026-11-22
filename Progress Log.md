@@ -9,6 +9,31 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: first playable slice)
+
+### Done
+
+- Built the first playable slice of the game in the game repo (`D:\LAMBERTO\divi-rush`, Godot 4.7.2): Start-up menu → Main menu → Episode select → Difficulty select → Level select → Play → Level end. Episode 1 (Easy Facts) → Easy → Levels 1–5 can be played; Episodes 2–4, Medium and Hard show with a lock and follow the unlock rules in [[D-008 Episodes, Difficulty and Scoring]].
+- Main menu: Play, How to Play (short rules screen), Settings (Music, Sound effects and Vibration on/off, saved), Exit.
+- Play screen as in the approved style sample: top bar, 10 progress dots, timer bar (green → yellow → red), streak badge, item card and 3 answer bubbles on Easy. Bubbles pop green with a sparkle when correct and turn red and shake when wrong; a time-out shows the correct answer.
+- Level end: Stars fill one by one, with a "New best!" tag; each Level's best Stars, score and time are saved on the device.
+- Game rules (points, streak bonus, Stars, Pass, unlocking, time-out, saving) are plain GDScript classes with 44 automatic tests (GUT); all pass headless.
+- Art: flat cartoon SVG drawings with matching PNG sprite sheets on a fixed grid (frame size in the file name), editable in Piskel or Clip Studio Paint EX. Font: Fredoka (OFL).
+- Music: three original chiptune tracks (menu loop, play loop, win jingle) and six sound effects, composed in code, on separate Music and SFX audio buses.
+- Android export preset (portrait, vibration permission) added.
+- Screenshots of every screen for Chapter III: game repo `docs/screenshots/` (01 Start-up menu to 12 Level end).
+
+### Decided
+
+- [[D-010 Game Code Foundations]]: item banks as Godot Resource (`.tres`) files; save file `user://save.cfg` (ConfigFile); GUT for tests; Fredoka font; Levels 1–4 use one divisor each and Level 5 is mixed; the streak bonus starts on the 4th correct answer in a row; best time comes only from passed plays. This settled the last OPEN item in [[Game Spec]].
+
+### Open
+
+- Medium and Hard wrong answers: [[D-008 Episodes, Difficulty and Scoring]] says "near" and "near and look-alike"; the exact rule (how near, which look-alikes) is not yet set.
+- Episode 2 has only two divisors (÷3, ÷4), so "Levels 1–4 each use one divisor" ([[D-010 Game Code Foundations]]) does not fit it; its Level contents need a decision. Episode 3 fits the pattern; Episode 4 (Fact Families) also needs its own Level plan.
+- The Android package name (`com.divirush.game`) and app version are working values.
+- The game has been run on a PC only; it still needs a test on an Android phone (vibration, notch margins, sound).
+
 ## 2026-11-22
 
 ### Done
