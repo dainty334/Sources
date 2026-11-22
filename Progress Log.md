@@ -9,6 +9,26 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: Episode 2)
+
+### Done
+
+- Episode 2 (Middle Facts: ÷3, ÷4) → Easy, Medium and Hard → Levels 1–5 can now be played in the game repo. It opens after Episode 1 Easy Level 5 is passed, as set in [[D-008 Episodes, Difficulty and Scoring]], and no longer shows "Coming soon".
+- Its Levels follow [[D-011 Medium and Hard Wrong Answers]]: Level 1 = ÷3, Level 2 = ÷4, Level 3 = both with answers 1–5, Level 4 = both with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts. Every item has its Easy, Medium and Hard wrong answers by the [[D-010 Game Code Foundations]] and D-011 rules.
+- Level cards can now carry their own label. Episode 2 Levels 3 and 4 show "Mix 1–5" and "Mix 6–10", so they are not confused with the Level 5 "Mix". Episode 1 is unchanged.
+- Tests: 6 new automatic tests for the Episode 2 item bank (71 in all, all passing headless).
+- New screenshots in the game repo `docs/screenshots/`: 18 Episode select with Episode 2 open, 19 Episode 2 Level select, 20 Episode 2 Play (Level 3).
+
+### Decided
+
+- Working value: the card labels "Mix 1–5" and "Mix 6–10" for Episode 2 Levels 3 and 4. They can be reworded without a new decision.
+
+### Open
+
+- Episode 3 (÷6, ÷7, ÷8, ÷9) is next; it fits the one-divisor-per-Level plan of [[D-010 Game Code Foundations]], but its Level 5 mix (how many facts from each divisor) is not set yet.
+- Episode 4 Level plan, and the wrong-answer range for items that hide the dividend.
+- Not every Episode 2 Level has been played by hand yet.
+
 ## 2026-11-22 (game code: Medium and Hard for Episode 1)
 
 ### Done
