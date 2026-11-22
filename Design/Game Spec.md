@@ -143,6 +143,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 ## Open items
 
 - Timer values are still to be tuned in the tryout.
-- Revisions settled on 2026-11-22, to be built: a Level pauses when the app leaves the screen, with a "Paused" card and the time kept ([[D-015 Pause When the App Leaves the Screen]]); the game uses the Compatibility renderer ([[D-016 Renderer for Low-Cost Phones]]).
+- Revisions settled and built on 2026-11-22: a Level pauses when the app leaves the screen, with a "Paused" card and the time kept ([[D-015 Pause When the App Leaves the Screen]]); the game uses the Compatibility renderer ([[D-016 Renderer for Low-Cost Phones]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.

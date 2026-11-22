@@ -9,6 +9,24 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: pause and renderer revisions)
+
+### Done
+
+- Built [[D-015 Pause When the App Leaves the Screen]]: when the app leaves the screen during a Level, the timer and the wait between items stop, and a "Paused" card hides the item and bubbles. "Go on" brings them back with the seconds that were left. There is no Pause button.
+- Built [[D-016 Renderer for Low-Cost Phones]]: the game now uses Godot's Compatibility renderer (OpenGL ES 3). All screenshots were taken again and look the same; the rebuilt APK asks for OpenGL ES 3.0 and no longer needs Vulkan.
+- Tests: 6 new automatic tests for pausing (106 in all, all passing headless). New screenshot in the game repo: 28 Play screen with the "Paused" card.
+
+### Decided
+
+- [[D-015 Pause When the App Leaves the Screen]] and [[D-016 Renderer for Low-Cost Phones]], settled earlier today.
+
+### Open
+
+- Check both revisions on a real phone: leave the app mid-item (Home button, a call) and come back; and check the game starts and runs smoothly on the oldest phone available.
+- More game revisions from the researcher may follow.
+- Still open from before: the release keystore; tune the timers in the tryout.
+
 ## 2026-11-22 (game revisions raised)
 
 ### Done
