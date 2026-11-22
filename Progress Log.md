@@ -9,6 +9,28 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: Medium and Hard for Episode 1)
+
+### Done
+
+- Episode 1 (Easy Facts) → Medium → Levels 1–5 and → Hard → Levels 1–5 can now be played in the game repo (`D:\LAMBERTO\divi-rush`). They follow the unlock rules in [[D-008 Episodes, Difficulty and Scoring]]: passing Easy Level 5 opens Medium, passing Medium Level 5 opens Hard. Medium and Hard no longer show "Coming soon".
+- Medium shows 4 bubbles and a 10 s timer; Hard shows 4 bubbles and a 7 s timer. The same 5 Levels and facts as Easy are used; only the bubbles, wrong answers and timer change.
+- Every Episode 1 item now stores 3 Medium and 3 Hard wrong answers, made by the rules in [[D-011 Medium and Hard Wrong Answers]]. The Easy wrong answers and the Level 5 mix did not change.
+- Play screen: the 4 bubbles of Medium and Hard overlapped; they now sit in an even 2 × 2 square with a gap between them.
+- Tests: 21 new automatic tests (65 in all, all passing headless) for the Medium and Hard wrong-answer rules, the Episode 1 item bank, Medium and Hard play (4 choices, 10 s and 7 s, time-out counts as wrong), unlocking, and saving each Difficulty's bests on its own.
+- New screenshots for Chapter III in the game repo `docs/screenshots/`: 13 Difficulty select with Medium open, 14 Medium Level select, 15 Medium Play, 16 Hard Level select, 17 Hard Play.
+
+### Decided
+
+- [[D-011 Medium and Hard Wrong Answers]]: Medium wrong answers are the closest numbers first (1 away, then 2, then 3) inside 1–20. Hard wrong answers are the fact family answer (the divisor) and then answer −1 and +1. When too few exist, the nearest unused numbers fill the gap. Episode 2's Levels are ÷3; ÷4; both with answers 1–5; both with answers 6–10; and a mixed review of 5 ÷3 and 5 ÷4 facts.
+
+### Open
+
+- Episode 4 (Fact Families) Level plan, and the wrong-answer range for its missing-number items that hide the dividend (up to 100).
+- On the Level select screen the earned gold Stars are hard to see on the yellow Level cards (seen in the Easy, Medium and Hard screenshots). A design check is needed.
+- The Medium and Hard screens were checked through screenshots and automatic tests of every item; not every one of the 10 new Levels has been played by hand yet.
+- Still open from before: tune the 15 s, 10 s and 7 s timers in the tryout; test on an Android phone; the package name and app version are working values.
+
 ## 2026-11-22 (game code: first playable slice)
 
 ### Done
