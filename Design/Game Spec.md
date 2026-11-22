@@ -4,7 +4,7 @@ project: DIVIRUSH
 type: spec
 status: draft
 updated: 2026-11-22
-sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]"]
+sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]"]
 tags: [divirush, design, spec]
 ---
 
@@ -96,15 +96,18 @@ Timer values are starting values, to be tuned in the tryout.
 - Each item stores the dividend, divisor, correct answer and its wrong answers, and which number is hidden (the quotient, or the divisor or dividend in Episode 4).
 - **Division range:** divisors 1–10 and quotients 1–10; every dividend is 100 or less and divides evenly ([[D-007 Division Range and Level Length]]).
 - **Items per Level:** 10.
-- **Data file format:** OPEN. To be chosen when the game code starts.
+- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). The item order is shuffled each play.
+- **Data file format:** Godot Resource (`.tres`), one item bank per Episode ([[D-010 Game Code Foundations]]).
 
 ## Scoring and saving
 
 - 10 points per correct answer, plus 1 point for each whole second left on the timer.
-- +5 streak bonus for each correct answer after three correct in a row.
+- +5 streak bonus for each correct answer after three correct in a row: the 4th correct answer in a row is the first to earn it ([[D-010 Game Code Foundations]]).
 - 0 points for a wrong answer or time-out; points never go down.
 - Stars count accuracy only.
 - Each Level saves its best Stars, best score and best time on the device only. There is no cloud save (pre-proposal).
+- **Best time:** the shortest total time to finish all 10 items, kept only from plays that pass ([[D-010 Game Code Foundations]]).
+- **Save file:** Godot `ConfigFile` at `user://save.cfg`, holding the Settings switches and each Level's bests ([[D-010 Game Code Foundations]]).
 
 ## Look, sound and controls
 
@@ -125,6 +128,4 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 
 ## Open items
 
-| Item | Needed for |
-|---|---|
-| Data file format | Code |
+None. The data file format was settled in [[D-010 Game Code Foundations]] on 2026-11-22.
