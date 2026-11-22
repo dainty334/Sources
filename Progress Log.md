@@ -9,6 +9,25 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: polish)
+
+### Done
+
+- The ☐ of missing-number items is now drawn as a thick rounded box in the text colour, on the item card and the Level cards, instead of the thin stand-in font sign.
+- Answer bubbles pick their font size by digits (1, 2 or 3), so 100 fits inside the bubble; checked on screen.
+- The best Stars on the Level cards now sit on a small white pill, so gold Stars stand out on the yellow cards.
+- An automatic run-through plays every Level of every Episode on Easy, Medium and Hard with the real item banks: every item shows the right number of different bubbles with the answer among them, a perfect play passes, and passing in order opens every Level.
+- Tests: 7 new automatic tests (100 in all, all passing headless). All screenshots in the game repo `docs/screenshots/` were taken again to show the new look.
+
+### Decided
+
+- Nothing new.
+
+### Open
+
+- Hand play on a real device is still to do; the run-through checks the rules and items, not how the game feels.
+- Still open from before: tune the 15 s, 10 s and 7 s timers in the tryout; build the Android APK and test on a phone.
+
 ## 2026-11-22 (game code: Episode 4)
 
 ### Done

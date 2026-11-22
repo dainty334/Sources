@@ -44,6 +44,6 @@ Settled by the researcher on 2026-11-22, before Episode 4 (Fact Families) was bu
 
 **Working values (changeable without a new decision):**
 - Which facts go into each Level, and which hidden kind each Level 4 and Level 5 item gets, are picked at random with a fixed seed, so rebuilding the item banks gives the same Levels.
-- Level card labels: Level 1 "÷ ?", Level 2 "÷ ☐", Level 3 "☐ ÷", Level 4 "Mix ☐", Level 5 "Mix". The ☐ shows on the cards and the item card (drawn by Godot's fallback font, a little thinner than Fredoka's digits); reword freely.
+- Level card labels: Level 1 "÷ ?", Level 2 "÷ ☐", Level 3 "☐ ÷", Level 4 "Mix ☐", Level 5 "Mix". The ☐ is drawn as a thick rounded box in the text colour on the cards and the item card, since Fredoka has no ☐ sign; reword freely.
 
 **Applies to:** [[Game Spec]] (Items, Difficulty) and the game code in `D:\LAMBERTO\divi-rush` (`WrongAnswers`, `tools/build_item_banks.gd`, `resources/episodes/episode_4.tres`).
