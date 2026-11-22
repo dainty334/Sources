@@ -17,3 +17,5 @@ tags: [divirush, decision]
 **Still open:** the exact unlock rule, timer length, items per level and division range. These are tracked in [[Game Spec]].
 
 **Applies to:** [[Game Spec]], Chapter I Scope and Objectives, and the game code.
+
+**Update 2026-11-22:** the level structure is superseded by [[D-008 Episodes, Difficulty and Scoring]]: four Episodes, each with Easy, Medium and Hard Difficulties of five Levels (60 Levels). The quick-tap mechanic, timer, running score and saved best score/time stay as decided here.

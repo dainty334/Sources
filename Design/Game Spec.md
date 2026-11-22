@@ -4,13 +4,13 @@ project: DIVIRUSH
 type: spec
 status: draft
 updated: 2026-11-22
-sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]"]
+sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]"]
 tags: [divirush, design, spec]
 ---
 
 # DIVIRUSH Game Spec
 
-The single source of truth for what the game does. The game code and the manuscript chapters both follow this note. Values marked **OPEN** are not decided yet; do not invent them in code or text. Raise them with the researcher instead.
+The single source of truth for what the game does. The game code and the manuscript chapters both follow this note. Values marked **OPEN** are not decided yet; do not invent them in code or text. Raise them with the researcher instead. Terms (Episode, Difficulty, Level, Star, Pass) follow [[CONTEXT]].
 
 ## Identity
 
@@ -32,68 +32,88 @@ The single source of truth for what the game does. The game code and the manuscr
 | Minimum hardware | 2 GB RAM, 150 MB free storage | Pre-proposal |
 | Network | Fully offline once installed | Pre-proposal |
 
+## Screens
+
+Home → Episode select → Difficulty select → Level select → Play → Level end. One main game screen is reused for every Level (pre-proposal).
+
 ## Core loop
 
-1. The learner selects an unlocked level.
-2. A division problem appears (for example, 56 ÷ 8) with 3–4 answer choices shown as bubbles: one correct answer plus 2–3 wrong answers.
-3. A countdown timer runs for the problem.
-4. The learner taps one answer before the timer ends.
-5. The game shows visual feedback for a correct or incorrect tap, and the running score updates.
-6. The next problem appears until the level ends.
-7. At the end of the level, the game shows the score and saves the best score and time on the device.
-8. If the performance meets the unlock rule, the next level unlocks. Any unlocked level can be replayed.
+1. The learner picks an open Episode, Difficulty and Level.
+2. An item appears (for example, 56 ÷ 8) with answer bubbles: one correct answer and the rest wrong.
+3. A countdown timer runs for the item.
+4. The learner taps one bubble before the timer ends.
+5. The game shows feedback at once, and the running score updates. A time-out counts as wrong and briefly shows the correct answer.
+6. The next item appears, until 10 items are done.
+7. The Level end screen shows the Stars, score and time, and saves the best of each on the device.
+8. Passing the Level (at least one Star) opens the next one. Any open Level can be replayed.
 
-One main game screen is reused for every round (pre-proposal).
+## Episodes
 
-## Levels
+Four Episodes, each with three Difficulties (Easy, Medium, Hard) of five Levels: 15 Levels per Episode, 60 in total ([[D-008 Episodes, Difficulty and Scoring]]).
 
-| Stage | Levels |
+| Episode | Facts |
 |---|---|
-| Easy | 1–5 |
-| Medium | 6–10 |
-| Hard | 11–15 |
+| 1 Easy Facts | ÷1, ÷2, ÷5, ÷10 |
+| 2 Middle Facts | ÷3, ÷4 |
+| 3 Hard Facts | ÷6, ÷7, ÷8, ÷9 |
+| 4 Fact Families | All ÷1–÷10, plus missing-number items (56 ÷ ☐ = 7, ☐ ÷ 8 = 7) |
 
-- **Unlock rule:** OPEN. The score or accuracy needed to unlock the next level.
-- **What changes between levels:** OPEN. For example, larger divisors, larger quotients, or a shorter timer.
-- **Items per level:** OPEN.
+## Difficulty
 
-## Problems
+| | Easy | Medium | Hard |
+|---|---|---|---|
+| Answer bubbles | 3 | 4 | 4 |
+| Wrong answers | Far from the correct answer | Near | Near and look-alike, from neighbouring facts |
+| Timer per item | 15 s | 10 s | 7 s |
 
-- Problems come from an expandable list, so new problems can be added without changing the game's code (pre-proposal).
-- Each problem stores the dividend, divisor, correct answer and 2–3 wrong answers.
-- **Division range:** OPEN. Which divisors, quotients and dividends count as "basic division facts".
+Timer values are starting values, to be tuned in the tryout.
+
+## Stars and unlocking
+
+| Stars | Correct out of 10 |
+|---|---|
+| 0 (not passed) | 0–7 |
+| 1 | 8 |
+| 2 | 9 |
+| 3 | 10 |
+
+- At the start only Episode 1 → Easy → Level 1 is open.
+- Passing a Level opens the next Level in the same Difficulty.
+- Passing Easy Level 5 opens that Episode's Medium; passing Medium Level 5 opens its Hard.
+- Passing an Episode's Easy Level 5 also opens the next Episode's Easy.
+
+## Items
+
+- Items come from an expandable list, so new items can be added without changing the game's code (pre-proposal).
+- Each item stores the dividend, divisor, correct answer and its wrong answers, and which number is hidden (the quotient, or the divisor or dividend in Episode 4).
+- **Division range:** divisors 1–10 and quotients 1–10; every dividend is 100 or less and divides evenly ([[D-007 Division Range and Level Length]]).
+- **Items per Level:** 10.
 - **Data file format:** OPEN. To be chosen when the game code starts.
-
-## Timer
-
-- Each problem has its own countdown timer (pre-proposal).
-- **Timer length:** OPEN. Seconds per problem, and whether it changes by stage.
-- **When time runs out:** OPEN. For example, counted as wrong and the next problem appears.
 
 ## Scoring and saving
 
-- A running score shows during play (pre-proposal).
-- The best score and time are saved on the device only. There is no cloud save (pre-proposal).
-- **Points per answer:** OPEN.
-- **Best score scope:** OPEN. Per level or overall.
+- 10 points per correct answer, plus 1 point for each whole second left on the timer.
+- +5 streak bonus for each correct answer after three correct in a row.
+- 0 points for a wrong answer or time-out; points never go down.
+- Stars count accuracy only.
+- Each Level saves its best Stars, best score and best time on the device only. There is no cloud save (pre-proposal).
 
-## Look and controls
+## Look, sound and controls
 
-- Simple 2D bubble-style graphics (pre-proposal).
-- One-tap controls (pre-proposal).
+- Simple 2D bubble-style graphics; one-tap controls (pre-proposal).
+- Bubbles pop when tapped: green with a sparkle for correct, red with a shake for wrong.
+- The timer bar turns green → yellow → red.
+- A streak counter ("×3 Streak!").
+- Stars fill in one by one at Level end, with a "New best!" tag.
+- Sounds for correct, wrong, time-up and the Star reveal, with a mute button.
+- Optional vibration on a wrong answer.
 
 ## Out of scope
 
-No storyline, chapters or mini-games; no multiplayer or online play; no accounts, companion website or teacher/admin dashboard; no cloud save; no iOS or desktop builds; no word problems or other math operations. Source: pre-proposal limitations.
+No storyline, chapters or mini-games; no multiplayer or online play; no accounts, companion website or teacher/admin dashboard; no cloud save; no iOS or desktop builds; no word problems or other math operations. Source: pre-proposal limitations. Also out: division with remainders, long division, fractions and decimals ([[D-007 Division Range and Level Length]]).
 
 ## Open items
 
 | Item | Needed for |
 |---|---|
-| Unlock rule | Code, Chapter I Objective 3 |
-| What changes between levels | Code, Chapter III |
-| Items per level | Code, Chapter I Objective 2 |
-| Division range | Code, Chapter I Scope |
 | Data file format | Code |
-| Timer length and time-out behaviour | Code |
-| Points per answer, best score scope | Code |
