@@ -9,6 +9,22 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game revisions raised)
+
+### Done
+
+- Reviewed the finished game code for risks on real phones. Two revisions were added to the revision list as open decisions; no code changed.
+
+### Decided
+
+- Nothing yet.
+
+### Open
+
+- [[D-015 Pause When the App Leaves the Screen]]: the item timer keeps running when the learner leaves the app.
+- [[D-016 Renderer for Low-Cost Phones]]: the Mobile renderer needs Vulkan, which many low-cost Android 10 phones handle poorly.
+- More game revisions from the researcher are still to come; they will be settled together.
+
 ## 2026-11-22 (game code: first Android APK)
 
 ### Done

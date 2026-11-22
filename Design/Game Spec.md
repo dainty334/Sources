@@ -140,6 +140,7 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 
 ## Open items
 
-- None for the game rules. Timer values are still to be tuned in the tryout.
+- Timer values are still to be tuned in the tryout.
+- **Revisions (OPEN):** pausing a Level when the app leaves the screen ([[D-015 Pause When the App Leaves the Screen]]), and the renderer for low-cost phones ([[D-016 Renderer for Low-Cost Phones]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.
