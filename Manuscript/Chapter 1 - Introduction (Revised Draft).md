@@ -28,9 +28,9 @@ In the Philippines, international assessments show serious gaps in basic mathema
 
 The Department of Education (DepEd) has responded with curriculum reform. Under DepEd Order No. 010, s. 2024, the MATATAG Curriculum started in School Year 2024–2025 for Kindergarten, Grades 1, 4, and 7 (Department of Education, 2024). This means that Grade 4 is one of the first grade levels to use the new curriculum. DepEd also lists the Rapid Mathematics Assessment among the tools that schools may use to profile learners (Department of Education, 2024). These steps show that early mathematics skills are a national priority. They also show that Grade 4 is a key stage for support in mathematics.
 
-At the local level, this study focuses on Baluan Elementary School in [city/province]. [Describe the current learning setting: face-to-face classes, modules, materials used in Grade 4 Mathematics, and any disruptions.] [Insert the researcher's dated observation about how Grade 4 learners practice and recall basic division facts.]
+At the local level, this study focuses on Baluan Elementary School in Barangay Baluan, General Santos City, South Cotabato. Grade 4 Mathematics classes at the school are held face-to-face, and learners practice with the DepEd textbook and printed worksheets. [Insert the researcher's dated observation about how Grade 4 learners practice and recall basic division facts.]
 
-To understand the local setting, the researcher conducted a survey on [date] with 33 parents and 22 teachers of Baluan Elementary School, covering [grade levels]. Respondents were selected through [selection method]. The survey questions were written about a reading comprehension game, not about division. For this reason, this chapter uses only the items about device access and attitudes toward learning games. These answers reflect the views of adults. They do not measure the performance of any learner.
+To understand the local setting, the researcher conducted a survey on [date] with 33 parents and 22 teachers of Baluan Elementary School. The parents have children in Grades 4 to 6. The teachers come from all grade levels of the school, and each teacher stated the grade level they handle. Respondents were selected through [selection method]. The survey questions were written about a reading comprehension game, not about division. For this reason, this chapter uses only the items about device access and attitudes toward learning games. These answers reflect the views of adults. They do not measure the performance of any learner.
 
 Device access appears common among the surveyed families. The survey identified that 27 of 33 parents (82%) reported that their child has a smartphone, tablet, or computer for learning. However, having a device does not prove that the device can run an Android application. Parent support for learning games was also strong but not complete. Twenty-six of 33 parents (79%) said they would allow their child to use an educational game, while five were unsure and two said no. In addition, 30 of 33 parents (91%) said they were willing to monitor their child's use of such a game. On whether an application would be a useful learning tool at home, 25 of 33 parents (76%) agreed, and the remaining 8 (24%) answered "maybe." These mixed answers show that some parents still need assurance before allowing game-based practice at home.
 
@@ -56,14 +56,15 @@ DIVIRUSH: An Adaptive Quick-Tap Educational Game for Enhancing Grade 4 Learner's
 The learner uses DiviRush in the following steps:
 
 1. The learner opens DiviRush on an Android phone or tablet.
-2. The learner selects an unlocked level. There are 15 levels in three stages: Easy (Levels 1–5), Medium (Levels 6–10), and Hard (Levels 11–15).
-3. A division problem appears on the screen, for example, 56 ÷ 8, together with three or four answer choices shown as bubbles.
-4. A countdown timer starts. The learner taps the answer they believe is correct before the timer runs out.
-5. The game immediately shows whether the answer is correct or incorrect, and the running score updates.
-6. At the end of the level, the game shows the learner's score and saves the best score and time on the device.
-7. If the learner's performance meets the game's rules, the next level unlocks. The learner may also replay any unlocked level.
+2. The learner selects one of four episodes. Each episode is a group of division facts: Easy Facts (÷1, ÷2, ÷5, ÷10), Middle Facts (÷3, ÷4), Hard Facts (÷6, ÷7, ÷8, ÷9), and Fact Families, a mixed review that also asks for a missing divisor or dividend.
+3. The learner chooses a difficulty, Easy, Medium, or Hard, and then an open level. Each difficulty has five levels of 10 items.
+4. A division problem appears on the screen, for example, 56 ÷ 8, together with three or four answer choices shown as bubbles.
+5. A countdown timer starts. The learner taps the answer they believe is correct before the timer runs out.
+6. The game immediately shows whether the answer is correct or incorrect, and the running score updates. If time runs out, the item counts as incorrect and the game briefly shows the correct answer.
+7. At the end of the level, the game shows the learner's stars, score, and time, and saves the best of each on the device.
+8. If the learner earns at least one star, which means at least 8 correct answers out of 10, the next level opens. The learner may also replay any open level.
 
-DiviRush has several qualities that make it suitable as a practice resource. First, it focuses on one skill, basic division fact recall, so each session stays short and clear. Second, it gives immediate feedback after every tap, so the learner does not wait for a teacher to check the answer. Third, it is adaptive. In this project, adaptive means that the game moves the learner to harder levels only when their performance meets the built-in rules. Fourth, it works offline once installed, so learners can practice at home without an internet connection. Finally, the division problems are stored in an expandable list, so new problems can be added without changing the game's code.
+DiviRush has several qualities that make it suitable as a practice resource. First, it focuses on one skill, basic division fact recall, so each session stays short and clear. Second, it gives immediate feedback after every tap, so the learner does not wait for a teacher to check the answer. Third, it is adaptive. In this project, adaptive means that the game opens new levels, harder difficulties, and new episodes only when the learner passes the levels before them. Fourth, it works offline once installed, so learners can practice at home without an internet connection. Finally, the division problems are stored in an expandable list, so new problems can be added without changing the game's code.
 
 The project is relevant because it responds to the national need for stronger foundational mathematics and to the local conditions found in the survey. It uses devices that most surveyed families already have, and it takes the form of a learning game that most surveyed teachers are willing to use. Scores, levels, and best times in the game record gameplay only. They are not a measure of the learner's mathematics achievement.
 
@@ -75,10 +76,10 @@ The general objective of the project is to develop DIVIRUSH, an adaptive quick-t
 
 Specifically, by December 2026, the project aims to:
 
-1. Build a quick-tap game that presents basic division facts in 15 levels grouped into three stages (Easy, Medium, and Hard), where each item shows one correct answer among three or four choices and must be answered before a countdown timer ends.
-2. Provide short, replayable levels of [number] items each that a learner can complete in one sitting on an Android phone or tablet outside the classroom.
-3. Include game elements, namely a running score, a saved best score and time, bubble-style visuals, and level unlocking based on performance rules, to make repeated division practice more engaging.
-4. Display immediate visual feedback that marks each answer as correct or incorrect before the next item appears.
+1. Build a quick-tap game that presents basic division facts in four episodes, each with three difficulties (Easy, Medium, and Hard) of five levels, for 60 levels in total, where each item shows one correct answer among three or four choices and must be answered before a countdown timer ends.
+2. Provide short, replayable levels of 10 items each that a learner can complete in one sitting on an Android phone or tablet outside the classroom.
+3. Include game elements, namely a running score with speed and streak bonuses, one to three stars per level, a saved best score and time, bubble-style visuals with sound, and level unlocking based on stars, to make repeated division practice more engaging.
+4. Display immediate visual feedback that marks each answer as correct or incorrect, and shows the correct answer when time runs out, before the next item appears.
 
 ## Scope and Limitations of the Project
 
@@ -89,11 +90,12 @@ This section defines the boundaries of DiviRush. The Scope describes what the pr
 This section describes what is inside the project. It covers the users, content, features, platform, and time frame of DiviRush.
 
 - **Target users:** The game is designed for Grade 4 learners of Baluan Elementary School.
-- **Content:** The game covers basic division facts [state the exact range, for example, divisors and quotients from 1 to 10].
+- **Content:** The game covers basic division facts with divisors from 1 to 10 and quotients from 1 to 10, so no dividend is greater than 100. Under the MATATAG Curriculum, learners divide using the 6, 7, 8, and 9 multiplication tables by the end of Grade 3. In Quarter 2 of Grade 4, they use these facts to divide 3- to 4-digit numbers by 1-digit numbers and 2- to 3-digit numbers by 2-digit numbers (Department of Education, n.d.).
 - **Gameplay:** The game is single-player and uses one main interaction: tapping the correct answer.
-- **Levels:** The game has 15 levels in three stages: Easy (Levels 1–5), Medium (Levels 6–10), and Hard (Levels 11–15). Harder levels unlock based on the learner's performance.
-- **Timer and feedback:** Each problem has a countdown timer, and the game gives immediate visual feedback after each answer.
-- **Score and progress:** The game shows a running score during play and saves the best score and time on the device.
+- **Episodes:** The game has four episodes: Easy Facts (÷1, ÷2, ÷5, ÷10), Middle Facts (÷3, ÷4), Hard Facts (÷6, ÷7, ÷8, ÷9), and Fact Families. The Hard Facts episode follows the 6, 7, 8, and 9 tables named in the MATATAG standard above. The grouping of the first two episodes is the project's own design.
+- **Difficulties and levels:** Each episode has three difficulties, Easy, Medium, and Hard, with five levels each, for 60 levels in total. Easy shows three answer choices, while Medium and Hard show four choices with wrong answers closer to the correct one. A level opens when the learner earns at least one star in the level before it.
+- **Timer and feedback:** Each problem has a countdown timer of 15 seconds on Easy, 10 seconds on Medium, and 7 seconds on Hard. The game gives immediate visual and sound feedback after each answer.
+- **Score and progress:** The game shows a running score during play and gives one to three stars at the end of each level, based on correct answers out of 10. It saves the best stars, score, and time for each level on the device.
 - **Content updates:** Division problems come from an expandable list, so new problems can be added without changing the game's code.
 - **Platform:** The game runs on Android phones and tablets with Android 10 to 14, at least 2 GB of RAM, and 150 MB of free storage.
 - **Connectivity:** The game works fully offline once installed.
@@ -108,7 +110,7 @@ This section describes what is outside the project. It also explains how the sur
 - The game has no user accounts, companion website, or teacher or admin dashboard.
 - Scores are stored only on the device. There is no cloud save or backup.
 - The game runs on Android only. It is not available on iOS or desktop computers.
-- The game covers basic division fact recall only. It does not cover [name the specific excluded topics, for example, division with remainders, multi-step word problems], or other mathematical operations.
+- The game covers basic division fact recall only. It does not cover division with remainders, long division of multi-digit numbers, fractions and decimals, or other mathematical operations.
 - The game does not measure learning. Scores, levels, and best times record gameplay only.
 - The game does not replace classroom instruction or teacher evaluation.
 - The survey responses come from parents and teachers. They are adult views, not measures of learner performance.
@@ -117,6 +119,8 @@ This section describes what is outside the project. It also explains how the sur
 ## BIBLIOGRAPHY
 
 This section lists the sources cited in Chapter I. The entries follow the APA 7th edition format and appear in alphabetical order.
+
+Department of Education. (n.d.). *MATATAG curriculum: Mathematics, Grades 1, 4 and 7*. https://www.deped.gov.ph/wp-content/uploads/MATATAG-Mathematics-CG-Grades1-4-and-7.pdf
 
 Department of Education. (2024, July 30). *Frequently asked questions on the policy guidelines on the implementation of the MATATAG Curriculum*. https://deped.gov.ph/wp-content/uploads/FAQs-ON-THE-MATATAG-CURRICULUM.pdf
 
@@ -134,7 +138,7 @@ Wang, L.-H., Chen, B., Hwang, G.-J., Guan, J.-Q., & Wang, Y.-Q. (2022). Effects 
 
 | # | Problem statement | Evidence | Matching objective |
 |---|---|---|---|
-| 1 | Difficulty recalling basic division facts quickly and accurately | National: TIMSS 2019 Grade 4 (Mullis et al., 2020); PISA 2022 (OECD, 2023). **Local: missing** | 1: 15-level timed quick-tap division practice |
+| 1 | Difficulty recalling basic division facts quickly and accurately | National: TIMSS 2019 Grade 4 (Mullis et al., 2020); PISA 2022 (OECD, 2023). **Local: missing** | 1: timed quick-tap division practice in 4 episodes × 3 difficulties × 5 levels |
 | 2 | Limited chances for engaging division practice outside the classroom | Parent survey item 4 (27/33 device access) and item 9 (25/33 app useful at home) | 2: short replayable levels playable at home on Android |
 | 3 | Repeated drills without game elements may not hold learners' interest | Teacher survey item 11 (20/22 believe games motivate); Wang et al. (2022) | 3: score, best score/time, bubble visuals, level unlocking |
 | 4 | Printed exercises give delayed feedback | Unrevised Chapter 1 statement. **Observation missing** | 4: immediate correct/incorrect feedback per item |
@@ -151,14 +155,14 @@ Wang, L.-H., Chen, B., Hwang, G.-J., Guan, J.-Q., & Wang, Y.-Q. (2022). Effects 
 # Open Questions and Claims to Verify
 
 1. ~~Full official title~~ Resolved: "DIVIRUSH: An Adaptive Quick-Tap Educational Game for Enhancing Grade 4 Learner's Division Fact Recall" (the unrevised Chapter 1 title).
-2. **City/province** of Baluan Elementary School.
-3. **Current learning setting** for Grade 4 Mathematics (face-to-face, modules, materials, disruptions).
+2. ~~City/province~~ Resolved: Barangay Baluan, General Santos City, South Cotabato.
+3. ~~Current learning setting~~ Resolved: face-to-face classes with the DepEd textbook and printed worksheets.
 4. **Dated researcher observation** of how Grade 4 learners practice and recall division facts.
-5. **Survey date, grade levels covered, and selection method.**
+5. **Survey date and selection method.** Grade levels resolved: parents of Grade 4–6 learners; teachers from all grade levels, each stating the grade they handle.
 6. **Local evidence for Problem 1.** The survey tally has no division item. If a separate tally shows that most learners find division hard, supply it with its date, respondents, and counts.
 7. **Evidence for Problem 4** (delayed feedback from printed exercises): an observation or teacher statement.
-8. **Exact division range** (divisors, quotients, dividends) for Scope.
-9. **Specific excluded topics** for Limitations (adviser comment on the unrevised Chapter 1).
-10. **Number of items per level** (Objective 2).
-11. **Unlock rules**: the score or accuracy needed to unlock the next level.
+8. ~~Exact division range~~ Resolved: divisors 1–10, quotients 1–10 ([[D-007 Division Range and Level Length]]).
+9. ~~Specific excluded topics~~ Resolved: division with remainders, long division, fractions and decimals.
+10. ~~Number of items per level~~ Resolved: 10 ([[D-007 Division Range and Level Length]]).
+11. ~~Unlock rules~~ Resolved: at least one star (8 of 10 correct) opens the next level ([[D-008 Episodes, Difficulty and Scoring]]). The episode and difficulty structure replaces the unrevised draft's "15 levels in three stages"; tell the adviser about this change on resubmission.
 12. **Android 10–14 range** comes from the pre-proposal. Confirm it still holds.
