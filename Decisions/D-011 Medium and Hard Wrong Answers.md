@@ -38,6 +38,6 @@ Settled by the researcher on 2026-11-22, before Medium and Hard of Episode 1 wer
 
 **Working values (changeable without a new decision):** the item bank tool picks the random choices with a fixed seed, so rebuilding the item banks gives the same wrong answers.
 
-**Still open:** the wrong-answer range for Episode 4 missing-number items that hide the dividend (up to 100), and Episode 4's Level plan.
+**Still open:** the wrong-answer range for Episode 4 missing-number items that hide the dividend (up to 100), and Episode 4's Level plan. Both settled later in [[D-013 Episode 4 Levels and Missing-Number Items]].
 
 **Applies to:** [[Game Spec]] (Difficulty, Items) and the game code in `D:\LAMBERTO\divi-rush` (`WrongAnswers`, `tools/build_item_banks.gd`).

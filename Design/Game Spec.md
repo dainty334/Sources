@@ -4,7 +4,7 @@ project: DIVIRUSH
 type: spec
 status: draft
 updated: 2026-11-22
-sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]", "[[D-011 Medium and Hard Wrong Answers]]", "[[D-012 Episode 3 Levels]]"]
+sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]", "[[D-011 Medium and Hard Wrong Answers]]", "[[D-012 Episode 3 Levels]]", "[[D-013 Episode 4 Levels and Missing-Number Items]]"]
 tags: [divirush, design, spec]
 ---
 
@@ -83,6 +83,11 @@ Wrong-answer rules ([[D-010 Game Code Foundations]], [[D-011 Medium and Hard Wro
 - **Hard (3 wrong answers):** first the answer of the swapped fact in the same fact family (35 ÷ 7 = 5, so the divisor), then answer −1 and +1 (the facts just before and after in the same table). Example: 35 ÷ 5 = 7 → 5, 6, 8.
 - **Too few:** when a fact has too few such numbers (25 ÷ 5 = 5, answer 1), the nearest unused numbers fill the missing places, so every item still has its wrong answers.
 
+Missing-number items in Episode 4 ([[D-013 Episode 4 Levels and Missing-Number Items]]):
+
+- **Hidden divisor** (56 ÷ ☐ = 7, answer 8): the same rules as above, inside 1–20; the fact-family partner is the quotient. Example: Hard → 7, 9, and 6 or 10.
+- **Hidden dividend** (☐ ÷ 8 = 7, answer 56): wrong answers are multiples of the divisor, inside 1–100, all different, never the answer. Easy (2): at least 3 multiples away. Medium (3): nearest multiples first (48, 64, and 40 or 72). Hard (3): the neighbouring facts (divisor − 1) × quotient and (divisor + 1) × quotient, then divisor × (quotient − 1) or divisor × (quotient + 1) (49, 63, and 48 or 64). Too few: the next nearest unused multiples of the divisor fill the places (☐ ÷ 10 = 10 → 90, 80, 70).
+
 ## Stars and unlocking
 
 | Stars | Correct out of 10 |
@@ -103,7 +108,7 @@ Wrong-answer rules ([[D-010 Game Code Foundations]], [[D-011 Medium and Hard Wro
 - Each item stores the dividend, divisor, correct answer and its wrong answers, and which number is hidden (the quotient, or the divisor or dividend in Episode 4).
 - **Division range:** divisors 1–10 and quotients 1–10; every dividend is 100 or less and divides evenly ([[D-007 Division Range and Level Length]]).
 - **Items per Level:** 10.
-- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). Episode 2 has only two divisors, so it uses: Level 1 = ÷3, Level 2 = ÷4, Level 3 = ÷3 and ÷4 with answers 1–5, Level 4 = ÷3 and ÷4 with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts ([[D-011 Medium and Hard Wrong Answers]]). Episode 3: Level 1 = ÷6, Level 2 = ÷7, Level 3 = ÷8, Level 4 = ÷9, Level 5 = mixed review of 2 ÷6, 3 ÷7, 3 ÷8 and 2 ÷9 facts ([[D-012 Episode 3 Levels]]). Episode 4's Level plan is **OPEN**. The item order is shuffled each play.
+- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). Episode 2 has only two divisors, so it uses: Level 1 = ÷3, Level 2 = ÷4, Level 3 = ÷3 and ÷4 with answers 1–5, Level 4 = ÷3 and ÷4 with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts ([[D-011 Medium and Hard Wrong Answers]]). Episode 3: Level 1 = ÷6, Level 2 = ÷7, Level 3 = ÷8, Level 4 = ÷9, Level 5 = mixed review of 2 ÷6, 3 ÷7, 3 ÷8 and 2 ÷9 facts ([[D-012 Episode 3 Levels]]). Episode 4 hides one kind of number per Level, each Level with one fact from every table ÷1–÷10 and no fact repeated across its Levels: Level 1 = missing quotient, Level 2 = missing divisor, Level 3 = missing dividend, Level 4 = 5 missing divisor and 5 missing dividend, Level 5 = 2 missing quotient, 4 missing divisor and 4 missing dividend ([[D-013 Episode 4 Levels and Missing-Number Items]]). The item order is shuffled each play.
 - **Data file format:** Godot Resource (`.tres`), one item bank per Episode ([[D-010 Game Code Foundations]]).
 
 ## Scoring and saving
@@ -135,6 +140,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 
 ## Open items
 
-- **Episode 4 Level plan** (all ÷1–÷10 plus missing-number items) and the wrong-answer range for items that hide the dividend (up to 100).
+- None for the game rules. Timer values are still to be tuned in the tryout.
 
-The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], and the Episode 3 Levels in [[D-012 Episode 3 Levels]], on 2026-11-22.
+The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.
