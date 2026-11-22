@@ -20,6 +20,7 @@ This vault is the **primary source** for the DIVIRUSH capstone: an adaptive quic
 | `Design/` | [[Game Spec]]: the single source of truth for what the game does | Yes, but only with values the user has decided. Leave undecided values marked OPEN. |
 | `Decisions/` | One note per decision, `D-001`, `D-002`, … | Add a note for every new decision or conflict. Change a settled one only when the user reverses it. |
 | `Sources/` | One note per cited reference: APA 7 entry, link, verified findings | Add a note before citing a new source. Record only facts checked against the source itself. |
+| `Questions/` | [[Open Questions]]: what the researcher still has to answer, one dated section per chapter | Add new sections; never remove earlier ones. |
 | `Templates/` | Note templates | Only to change the convention itself. |
 | `attachments/` | Images embedded with `![[name]]` | Add files; name them `<note-slug>-imgNN.<ext>`. |
 
@@ -41,13 +42,14 @@ New notes also carry `type`: `draft`, `final`, `spec`, `decision`, `source`, `lo
 
 ## Where facts live
 
-- **Game behaviour** (levels, timer, scoring, platform): [[Game Spec]]. Code in the game repo and the manuscript chapters both follow it.
+- **Terms** (Episode, Difficulty, Level, Star, Pass): [[CONTEXT]], the glossary. Use its words in notes, chapters and code; add a term there when a new one is settled.
+- **Game behaviour** (episodes, levels, timer, scoring, platform): [[Game Spec]]. Code in the game repo and the manuscript chapters both follow it.
 - **Decisions and conflicts:** `Decisions/`. Check for an `open` decision before relying on a contested fact, and raise it with the user. Record each new decision from `Templates/Decision.md` with the next free ID.
-- **Citations:** `Sources/`. Cite only sources with a `verified` note; create one from `Templates/Source.md` first.
+- **Citations:** `Sources/`. Cite only sources with a `verified` note; create one from `Templates/Source.md` first. For a chapter with many sources, one `type: source-matrix` note (one table row per source, each row with its DOI or URL) can stand in for separate notes, as [[Chapter II Source Matrix]] does.
 
 ## Writing manuscript sections
 
-1. Follow the section order in [[Manuscript Outline - BSIT (Table of Contents)]] and [[Guidelines - Writing Chapters 1-3]], and write every section by [[Writing Rules]].
+1. Follow the section order in [[Manuscript Outline - BSIT (Table of Contents)]] and [[Guidelines - Writing Chapters 1-3]], and write every section by [[Writing Rules]]. Chapter II also follows [[Chapter II Writing Rules]] (2015–2026 sources, 30+ sources, 10+ pages). A note's `source_years` frontmatter sets the year range the vault check enforces.
 2. New chapter notes start from `Templates/Manuscript Section.md` and go in `Manuscript/`.
 3. When a section is drafted, tick its box in the outline and link it there.
 4. When revising an `unrevised` note, resolve each bracketed adviser comment, then set `status: revised`.
