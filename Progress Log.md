@@ -9,6 +9,46 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: Episode 4)
+
+### Done
+
+- Episode 4 (Fact Families) → Easy, Medium and Hard → Levels 1–5 can now be played in the game repo. It opens after Episode 3 Easy Level 5 is passed and no longer shows "Coming soon". All four Episodes are now built.
+- Its Levels follow [[D-013 Episode 4 Levels and Missing-Number Items]]: each Level has one fact from every table ÷1–÷10, 50 different facts in all. Level 1 hides the quotient, Level 2 the divisor, Level 3 the dividend, Level 4 mixes 5 divisor and 5 dividend items, Level 5 mixes 2 quotient, 4 divisor and 4 dividend items. The cards show "÷ ?", "÷ ☐", "☐ ÷", "Mix ☐" and "Mix".
+- New wrong-answer rules in `WrongAnswers` for a hidden dividend: far multiples (Easy), nearest multiples (Medium) and neighbouring facts (Hard), all inside 1–100. Hidden-divisor items use the [[D-011 Medium and Hard Wrong Answers]] rules with the quotient as the fact-family partner. The Episode 1–3 item banks did not change.
+- Tests: 16 new automatic tests for the missing-number rules and the Episode 4 item bank (93 in all, all passing headless). A code review found two small style points (whole-number division warnings, one untyped variable), both fixed.
+- New screenshots in the game repo `docs/screenshots/`: 24 Episode select with Episode 4 open, 25 Episode 4 Level select, 26 Easy Play with a missing divisor (25 ÷ ☐ = 5), 27 Hard Play with a missing dividend (☐ ÷ 8 = 8 with 80, 64, 72 and 56).
+
+### Decided
+
+- Nothing new; the build follows D-013.
+
+### Open
+
+- The ☐ is drawn by Godot's fallback font, a little thinner than Fredoka's digits; it may need a thicker drawn box.
+- A 3-digit bubble (100, from ☐ ÷ 10 = 10) has not been seen on screen yet; 2-digit bubbles fit well.
+- Not every Episode 4 Level has been played by hand yet.
+- Still open from before: the gold Stars are hard to see on the yellow Level cards; tune the 15 s, 10 s and 7 s timers in the tryout; test on an Android phone.
+
+## 2026-11-22 (design: Episode 4 decisions)
+
+### Done
+
+- Settled the Episode 4 (Fact Families) design before building it. No game code changed.
+- Updated [[Game Spec]] (Difficulty, Items, Open items) and pointed the "Still open" line of [[D-011 Medium and Hard Wrong Answers]] to the new decision.
+
+### Decided
+
+- [[D-013 Episode 4 Levels and Missing-Number Items]]: one hidden kind per Level (L1 missing quotient, L2 missing divisor, L3 missing dividend, L4 divisor and dividend 5 / 5, L5 quotient, divisor and dividend 2 / 4 / 4); one fact from each table ÷1–÷10 per Level, with no fact repeated across the five Levels.
+- A hidden divisor uses the D-011 wrong-answer rules, with the quotient as the fact-family partner. A hidden dividend uses multiples of the divisor inside 1–100: far multiples for Easy, nearest multiples for Medium, neighbouring facts for Hard, and the nearest unused multiples when too few.
+- Working values: the Level card labels "÷ ?", "÷ ☐", "☐ ÷", "Mix ☐" and "Mix"; random picks with a fixed seed.
+
+### Open
+
+- Build Episode 4 in the game repo: the hidden-dividend rules in `WrongAnswers`, the Episode 4 item bank, tests and screenshots.
+- Check that the Fredoka font shows ☐ on the item card and the Level cards, and that 2- and 3-digit answers (up to 100) fit in the bubbles.
+- Still open from before: the gold Stars are hard to see on the yellow Level cards; tune the 15 s, 10 s and 7 s timers in the tryout; test on an Android phone; not every Level has been played by hand.
+
 ## 2026-11-22 (game code: Episode 3)
 
 ### Done
