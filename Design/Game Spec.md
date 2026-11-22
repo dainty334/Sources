@@ -25,7 +25,7 @@ The single source of truth for what the game does. The game code and the manuscr
 
 | Item | Value | Source |
 |---|---|---|
-| Engine | Godot 4.7, Mobile renderer | Pre-proposal |
+| Engine | Godot 4.7, Compatibility renderer (OpenGL ES 3), for low-cost phones | Pre-proposal; renderer: [[D-016 Renderer for Low-Cost Phones]] |
 | Language | GDScript | [[D-002 Programming Language]] |
 | Output | Android APK (build setup: [[D-014 Android Build Setup]]) | Pre-proposal |
 | Devices | Android phones and tablets, Android 10–14 | Pre-proposal |
@@ -54,6 +54,8 @@ Start-up menu → Main menu → Episode select → Difficulty select → Level s
 6. The next item appears, until 10 items are done.
 7. The Level end screen shows the Stars, score and time, and saves the best of each on the device.
 8. Passing the Level (at least one Star) opens the next one. Any open Level can be replayed.
+
+If the learner leaves the app during a Level (a call, the Home button), the Level pauses and the timer keeps its time. On return a "Paused" card covers the item; "Go on" shows it again. There is no Pause button ([[D-015 Pause When the App Leaves the Screen]]).
 
 ## Episodes
 
@@ -141,6 +143,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 ## Open items
 
 - Timer values are still to be tuned in the tryout.
-- **Revisions (OPEN):** pausing a Level when the app leaves the screen ([[D-015 Pause When the App Leaves the Screen]]), and the renderer for low-cost phones ([[D-016 Renderer for Low-Cost Phones]]).
+- Revisions settled on 2026-11-22, to be built: a Level pauses when the app leaves the screen, with a "Paused" card and the time kept ([[D-015 Pause When the App Leaves the Screen]]); the game uses the Compatibility renderer ([[D-016 Renderer for Low-Cost Phones]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.

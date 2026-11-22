@@ -3,8 +3,9 @@ id: D-016
 title: "Renderer for low-cost phones"
 project: DIVIRUSH
 type: decision
-status: open
+status: settled
 raised: 2026-11-22
+decided: 2026-11-22
 tags: [divirush, decision, game-code, android, revision]
 ---
 
@@ -25,8 +26,11 @@ Raised on 2026-11-22 as a game revision, after a review of the game code. Terms 
 - Keep the Mobile renderer, and switch only if the phone test shows a problem.
 - Test both on the oldest phone available, then decide.
 
-**Decision:** (fill when settled; set `status: settled` and add `decided:`)
+**Decision:** settled by the researcher on 2026-11-22: **switch to the Compatibility renderer now** (OpenGL ES 3).
 
 **Reason:**
+- Compatibility is Godot's renderer for simple 2D games and older phones, so it runs on the widest range of low-cost Android 10 phones.
+- DiviRush uses no 3D and no graphics effects that need the Mobile renderer, so the look should not change; the screenshots are taken again after the switch to check this.
+- The switch is one project setting, so it can be undone if the phone test shows a reason.
 
 **Applies to:** [[Game Spec]] (Platform) and the game repo `D:\LAMBERTO\divi-rush` (`project.godot` through `tools/setup_project.gd`, `export_presets.cfg`).

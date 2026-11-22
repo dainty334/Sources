@@ -3,8 +3,9 @@ id: D-015
 title: "Pause when the app leaves the screen"
 project: DIVIRUSH
 type: decision
-status: open
+status: settled
 raised: 2026-11-22
+decided: 2026-11-22
 tags: [divirush, decision, game-design, game-code, revision]
 ---
 
@@ -26,8 +27,17 @@ Raised on 2026-11-22 as a game revision, after a review of the game code. Terms 
 - Add a Pause button on the Play screen as well, so a learner can stop on purpose.
 - No change: leaving the app may cost an item.
 
-**Decision:** (fill when settled; set `status: settled` and add `decided:`)
+**Decision:** settled by the researcher on 2026-11-22.
+
+| Item | Choice |
+|---|---|
+| On leaving the app | **Pause and keep the time.** When the app leaves the screen during a Level, the item timer stops. On return, a "Paused" card covers the item, so the learner gets no extra thinking time; tapping "Go on" shows the item again with the seconds it had left. |
+| Pause button | **None.** Only leaving the app pauses a Level. The Back button still leaves the Level, as before. |
 
 **Reason:**
+- Keeping the time left is fair to the learner without giving free thinking time; covering the item means leaving the app cannot be used to look up or work out an answer.
+- A Pause button would add a control to the quick-tap screen and invite pausing mid-item; the Back button already lets a learner stop a Level.
 
-**Applies to:** [[Game Spec]] (How a Level plays) and the game code in `D:\LAMBERTO\divi-rush` (`scripts/screens/play_screen.gd`).
+**Working values (changeable without a new decision):** the card's words ("Paused", "Go on"); the feedback pause between items also stops while the app is away.
+
+**Applies to:** [[Game Spec]] (Core loop) and the game code in `D:\LAMBERTO\divi-rush` (`scripts/screens/play_screen.gd`).
