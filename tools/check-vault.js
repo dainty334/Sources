@@ -64,7 +64,7 @@ for (const n of parsed) {
   n.fm = n.fm || {};
   if (!n.fm.status) err(n.rel, 'missing status', `add status: one of ${[...STATUSES].join(', ')}`);
   else if (!STATUSES.has(n.fm.status)) err(n.rel, `status "${n.fm.status}" is not allowed`, `use one of ${[...STATUSES].join(', ')}`);
-  if (TYPED_DIRS.includes(top) && !n.fm.type) err(n.rel, 'missing type', 'add type: decision, spec or source');
+  if (TYPED_DIRS.includes(top) && !n.fm.type) err(n.rel, 'missing type', 'add type: decision, spec, source or source-matrix');
 
   // Decisions: unique IDs that match the file name.
   if (top === 'Decisions') {
@@ -78,8 +78,15 @@ for (const n of parsed) {
     if (!['open', 'settled'].includes(n.fm.status)) err(n.rel, 'decision status must be open or settled', 'set status: open or status: settled');
   }
 
-  // Sources: URL present; collect verified ones.
-  if (top === 'Sources') {
+  // Sources: URL present; collect verified ones. A verified source matrix (type: source-matrix)
+  // vouches for every URL in its table rows, one row per source.
+  if (top === 'Sources' && n.fm.type === 'source-matrix') {
+    if (n.fm.status === 'verified') {
+      for (const row of n.text.split(/\r?\n/).filter((l) => l.startsWith('|'))) {
+        for (const u of row.match(/https?:\/\/[^\s|)]+/g) || []) verifiedUrls.add(u.replace(/[).,;]+$/, ''));
+      }
+    }
+  } else if (top === 'Sources') {
     if (!n.fm.url) err(n.rel, 'source has no url', 'add url: with the DOI or official link');
     if (n.fm.status === 'verified' && n.fm.url) verifiedUrls.add(n.fm.url.replace(/[).,;]+$/, ''));
   }
@@ -94,7 +101,10 @@ for (const n of parsed) {
 }
 
 // Bibliography entries in manuscript notes must have a verified source note.
+// A note may set its own allowed range in frontmatter, e.g. source_years: 2015-2026 (default 2020-2026).
 for (const n of parsed.filter((p) => p.rel.startsWith('Manuscript/'))) {
+  const range = ((n.fm && n.fm.source_years) || '').match(/^(\d{4})\s*-\s*(\d{4})$/);
+  const [minYear, maxYear] = range ? [+range[1], +range[2]] : [2020, 2026];
   const lines = n.text.split(/\r?\n/);
   const bibStart = lines.findIndex((l) => /^#{1,3}\s+BIBLIOGRAPHY\s*$/i.test(l));
   if (bibStart < 0) continue;
@@ -106,7 +116,7 @@ for (const n of parsed.filter((p) => p.rel.startsWith('Manuscript/'))) {
     const clean = url.replace(/[).,;]+$/, '');
     if (!verifiedUrls.has(clean)) err(n.rel, `bibliography entry has no verified source note: ${clean}`, 'add a note in Sources/ with this url and status: verified, after checking the source');
     const year = (l.match(/\((\d{4})/) || [])[1];
-    if (year && (+year < 2020 || +year > 2026)) warn(n.rel, `source year ${year} is outside 2020-2026`, 'replace it with a 2020-2026 source');
+    if (year && (+year < minYear || +year > maxYear)) warn(n.rel, `source year ${year} is outside ${minYear}-${maxYear}`, `replace it with a ${minYear}-${maxYear} source`);
   }
 }
 

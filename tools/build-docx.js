@@ -6,13 +6,13 @@
 // Exports from the first "# CHAPTER" heading up to the first "---" line after it
 // (or the end of the note), so frontmatter, callouts and appendix tables stay out.
 // Markdown handled: #/##/### headings, paragraphs, "- " bullets, "1. " numbered
-// lists, **bold**, *italic*, and [placeholders] (highlighted yellow).
+// lists, | pipe | tables |, **bold**, *italic*, and [placeholders] (highlighted yellow).
 const fs = require('fs');
 const path = require('path');
 const JSZip = require('jszip');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
-  LevelFormat, Footer, PageNumber,
+  LevelFormat, Footer, PageNumber, Table, TableRow, TableCell, WidthType, BorderStyle,
 } = require('docx');
 
 const [src, outArg] = process.argv.slice(2);
@@ -22,7 +22,7 @@ if (!src) {
 }
 const out = outArg || src.replace(/ \((Revised Draft|Unrevised|Draft)\)\.md$|\.md$/, ' (Revised).docx');
 
-const text = fs.readFileSync(src, 'utf8');
+const text = fs.readFileSync(src, 'utf8').replace(/^﻿/, ''); // tolerate a UTF-8 BOM
 const start = text.search(/^# CHAPTER/m);
 if (start < 0) {
   console.error(`error: no "# CHAPTER" heading in ${src}. Add one where the exported text should begin.`);
@@ -35,29 +35,69 @@ const FONT = 'Times New Roman';
 const SIZE = 24; // 12 pt
 const LINE = 480; // double spacing
 
-function runs(s) {
+// `base` adds run options to every run (for example { size: 20 } or { bold: true } in tables).
+// `plainBrackets` keeps [text] unhighlighted, for APA descriptors such as [Mobile app] in a bibliography.
+function runs(s, base = {}, plainBrackets = false) {
   const result = [];
   const re = /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|\[[^\]]+\])/g;
   let last = 0, m;
   while ((m = re.exec(s))) {
-    if (m.index > last) result.push(new TextRun({ text: s.slice(last, m.index) }));
+    if (m.index > last) result.push(new TextRun({ ...base, text: s.slice(last, m.index) }));
     const t = m[0];
-    if (t.startsWith('**')) result.push(new TextRun({ text: t.slice(2, -2), bold: true }));
-    else if (t.startsWith('*')) result.push(new TextRun({ text: t.slice(1, -1), italics: true }));
-    else result.push(new TextRun({ text: t, highlight: 'yellow' }));
+    if (t.startsWith('**')) result.push(new TextRun({ ...base, text: t.slice(2, -2), bold: true }));
+    else if (t.startsWith('*')) result.push(new TextRun({ ...base, text: t.slice(1, -1), italics: true }));
+    else result.push(new TextRun({ ...base, text: t, ...(plainBrackets ? {} : { highlight: 'yellow' }) }));
     last = m.index + t.length;
   }
-  if (last < s.length) result.push(new TextRun({ text: s.slice(last) }));
+  if (last < s.length) result.push(new TextRun({ ...base, text: s.slice(last) }));
   return result;
 }
 
+const TEXT_WIDTH = 12240 - 2160 - 1440; // page width minus left and right margins (DXA)
+const TABLE_SIZE = 20; // 10 pt, single-spaced, so wide matrices fit the page
+
+// Markdown pipe table -> Word table. The first row is the header; the |---| row is dropped.
+function buildTable(rows) {
+  const cells = rows.map((r) => r.replace(/^\||\|$/g, '').split('|').map((c) => c.trim()));
+  const body = cells.filter((c) => !c.every((x) => /^:?-{3,}:?$/.test(x)));
+  const cols = Math.max(...body.map((c) => c.length));
+  const width = Math.floor(TEXT_WIDTH / cols);
+  const border = { style: BorderStyle.SINGLE, size: 4, color: '000000' };
+  const borders = { top: border, bottom: border, left: border, right: border };
+  return new Table({
+    width: { size: width * cols, type: WidthType.DXA },
+    columnWidths: Array(cols).fill(width),
+    rows: body.map((c, i) => new TableRow({
+      tableHeader: i === 0,
+      children: Array.from({ length: cols }, (_, j) => new TableCell({
+        width: { size: width, type: WidthType.DXA },
+        borders,
+        margins: { top: 40, bottom: 40, left: 80, right: 80 },
+        children: [new Paragraph({
+          spacing: { line: 240, before: 0, after: 0 },
+          children: runs(c[j] || '', i === 0 ? { size: TABLE_SIZE, bold: true } : { size: TABLE_SIZE }),
+        })],
+      })),
+    })),
+  });
+}
+
 const children = [];
-let inBib = false, olInstance = 0, prevWasOl = false, placeholders = 0;
+let inBib = false, olInstance = 0, prevWasOl = false, placeholders = 0, tableRows = [];
+
+const flushTable = () => {
+  if (!tableRows.length) return;
+  children.push(buildTable(tableRows));
+  children.push(new Paragraph({ children: [] })); // space after the table
+  tableRows = [];
+};
 
 for (const raw of lines) {
   const s = raw.trimEnd();
+  if (s.startsWith('|')) { tableRows.push(s); placeholders += (s.match(/\[[^\]]+\]/g) || []).length; continue; }
+  flushTable();
   if (!s) continue;
-  placeholders += (s.match(/\[[^\]]+\]/g) || []).length;
+  if (!inBib) placeholders += (s.match(/\[[^\]]+\]/g) || []).length;
   let m;
   if ((m = s.match(/^(#{1,3})\s+(.*)$/))) {
     const level = m[1].length, title = m[2];
@@ -91,11 +131,12 @@ for (const raw of lines) {
     continue;
   }
   if (inBib && !s.startsWith('This section')) {
-    children.push(new Paragraph({ indent: { left: 720, hanging: 720 }, children: runs(s) }));
+    children.push(new Paragraph({ indent: { left: 720, hanging: 720 }, children: runs(s, {}, true) }));
     continue;
   }
   children.push(new Paragraph({ alignment: AlignmentType.JUSTIFIED, indent: { firstLine: 720 }, children: runs(s) }));
 }
+flushTable();
 
 const headingRun = { font: FONT, size: SIZE, bold: true, color: '000000' };
 const doc = new Document({
