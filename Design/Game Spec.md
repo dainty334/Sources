@@ -4,7 +4,7 @@ project: DIVIRUSH
 type: spec
 status: draft
 updated: 2026-11-22
-sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]"]
+sources: ["[[Pre-Proposal - Division Duel (Final)]]", "[[Chapter 1 - Introduction (Unrevised)]]", "[[D-003 Gameplay Design]]", "[[D-007 Division Range and Level Length]]", "[[D-008 Episodes, Difficulty and Scoring]]", "[[D-010 Game Code Foundations]]", "[[D-011 Medium and Hard Wrong Answers]]"]
 tags: [divirush, design, spec]
 ---
 
@@ -76,6 +76,13 @@ Four Episodes, each with three Difficulties (Easy, Medium, Hard) of five Levels:
 
 Timer values are starting values, to be tuned in the tryout.
 
+Wrong-answer rules ([[D-010 Game Code Foundations]], [[D-011 Medium and Hard Wrong Answers]]). All wrong answers are inside 1–20, all different, and never the correct answer.
+
+- **Easy (2 wrong answers):** at least 3 away from the correct answer.
+- **Medium (3 wrong answers):** closest first: the numbers 1 away, then 2 away, then 3 away, picked at random when a step has more numbers than places left. Example: 35 ÷ 5 = 7 → 6, 8, and 5 or 9.
+- **Hard (3 wrong answers):** first the answer of the swapped fact in the same fact family (35 ÷ 7 = 5, so the divisor), then answer −1 and +1 (the facts just before and after in the same table). Example: 35 ÷ 5 = 7 → 5, 6, 8.
+- **Too few:** when a fact has too few such numbers (25 ÷ 5 = 5, answer 1), the nearest unused numbers fill the missing places, so every item still has its wrong answers.
+
 ## Stars and unlocking
 
 | Stars | Correct out of 10 |
@@ -96,7 +103,7 @@ Timer values are starting values, to be tuned in the tryout.
 - Each item stores the dividend, divisor, correct answer and its wrong answers, and which number is hidden (the quotient, or the divisor or dividend in Episode 4).
 - **Division range:** divisors 1–10 and quotients 1–10; every dividend is 100 or less and divides evenly ([[D-007 Division Range and Level Length]]).
 - **Items per Level:** 10.
-- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). The item order is shuffled each play.
+- **Items in each Level:** Levels 1–4 each use one divisor of the Episode with its 10 facts; Level 5 is a mixed review of 10 facts from all the Episode's divisors. Episode 1: Level 1 = ÷1, Level 2 = ÷2, Level 3 = ÷5, Level 4 = ÷10, Level 5 = mixed ([[D-010 Game Code Foundations]]). Episode 2 has only two divisors, so it uses: Level 1 = ÷3, Level 2 = ÷4, Level 3 = ÷3 and ÷4 with answers 1–5, Level 4 = ÷3 and ÷4 with answers 6–10, Level 5 = mixed review of 5 ÷3 and 5 ÷4 facts ([[D-011 Medium and Hard Wrong Answers]]). Episode 4's Level plan is **OPEN**. The item order is shuffled each play.
 - **Data file format:** Godot Resource (`.tres`), one item bank per Episode ([[D-010 Game Code Foundations]]).
 
 ## Scoring and saving
@@ -128,4 +135,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 
 ## Open items
 
-None. The data file format was settled in [[D-010 Game Code Foundations]] on 2026-11-22.
+- **Episode 4 Level plan** (all ÷1–÷10 plus missing-number items) and the wrong-answer range for items that hide the dividend (up to 100).
+
+The data file format was settled in [[D-010 Game Code Foundations]], and the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], on 2026-11-22.
