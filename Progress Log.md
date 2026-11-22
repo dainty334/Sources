@@ -14,7 +14,7 @@ Newest entry first. Each entry records what was done, what was decided, and what
 ### Done
 
 - Amended [[D-015 Pause When the App Leaves the Screen]] at the researcher's request: the "Paused" card now has Resume, Restart and Levels buttons, styled like the Level end buttons. Restart plays the Level again from item 1; Restart and Levels save nothing from the stopped play.
-- Tests: 2 new automatic tests (108 in all, all passing headless). The APK was rebuilt.
+- Tests: 2 new automatic tests (108 in all, all passing headless). The APK was rebuilt. New screenshot 28 shows the card with its three buttons.
 
 ### Decided
 
@@ -22,7 +22,7 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 ### Open
 
-- Screenshot 28 (Paused card) still shows the old single "Go on" button. The screenshot tool could not draw while the computer screen was locked; take it again with the screen on.
+- Screenshot 28 (Paused card) was first taken while the computer screen was locked, which the screenshot tool cannot draw; it was taken again with the screen on and now shows all three buttons.
 - Check the pause on a real phone; still open from before: the release keystore and timer tuning.
 
 ## 2026-11-22 (game code: pause and renderer revisions)
