@@ -9,6 +9,26 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: Episode 3)
+
+### Done
+
+- Episode 3 (Hard Facts: ÷6, ÷7, ÷8, ÷9) → Easy, Medium and Hard → Levels 1–5 can now be played in the game repo. It opens after Episode 2 Easy Level 5 is passed, as set in [[D-008 Episodes, Difficulty and Scoring]], and no longer shows "Coming soon".
+- Its Levels follow [[D-012 Episode 3 Levels]]: Level 1 = ÷6, Level 2 = ÷7, Level 3 = ÷8, Level 4 = ÷9, each with answers 1–10; Level 5 = mixed review of 2 ÷6, 3 ÷7, 3 ÷8 and 2 ÷9 facts. Every item has its Easy, Medium and Hard wrong answers by the [[D-010 Game Code Foundations]] and [[D-011 Medium and Hard Wrong Answers]] rules. The largest dividend is 90.
+- The Level cards show "÷6" to "÷9" and "Mix" with no labels of their own. The Episode 1 and 2 item banks did not change.
+- Tests: 6 new automatic tests for the Episode 3 item bank (77 in all, all passing headless).
+- New screenshots in the game repo `docs/screenshots/`: 21 Episode select with Episode 3 open, 22 Episode 3 Level select, 23 Episode 3 Play on Hard (72 ÷ 8 with 9, 8, 10 and 7).
+
+### Decided
+
+- [[D-012 Episode 3 Levels]]: Levels 1–4 use ÷6, ÷7, ÷8, ÷9 in counting order; Level 5 mixes 2 ÷6, 3 ÷7, 3 ÷8 and 2 ÷9 facts, giving more practice to ÷7 and ÷8; the Level cards need no labels of their own.
+
+### Open
+
+- Episode 4 (Fact Families) is next: its Level plan, which number is hidden (divisor or dividend), the wrong-answer range for hidden dividends up to 100, and how the ☐ shows on the item card.
+- Not every Episode 3 Level has been played by hand yet; it was checked through automatic tests of every item and screenshots.
+- Still open from before: the gold Stars are hard to see on the yellow Level cards (seen again in screenshot 22); tune the 15 s, 10 s and 7 s timers in the tryout; test on an Android phone.
+
 ## 2026-11-22 (game code: Episode 2)
 
 ### Done
@@ -25,7 +45,6 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 ### Open
 
-- Episode 3 (÷6, ÷7, ÷8, ÷9) is next; it fits the one-divisor-per-Level plan of [[D-010 Game Code Foundations]], but its Level 5 mix (how many facts from each divisor) is not set yet.
 - Episode 4 Level plan, and the wrong-answer range for items that hide the dividend.
 - Not every Episode 2 Level has been played by hand yet.
 
