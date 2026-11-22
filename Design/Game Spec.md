@@ -34,7 +34,14 @@ The single source of truth for what the game does. The game code and the manuscr
 
 ## Screens
 
-Home → Episode select → Difficulty select → Level select → Play → Level end. One main game screen is reused for every Level (pre-proposal).
+Start-up menu → Main menu → Episode select → Difficulty select → Level select → Play → Level end. One main game screen is reused for every Level (pre-proposal).
+
+- **Start-up menu:** the first screen when the app opens. It shows the DiviRush title and a "Tap to Start" prompt; tapping goes to the Main menu.
+- **Main menu:** four buttons ([[D-008 Episodes, Difficulty and Scoring]]):
+  - **Play:** opens Episode select.
+  - **How to Play:** a short screen explaining the rules: tap the correct bubble before the timer ends; 8 of 10 correct earns a Star and opens the next Level.
+  - **Settings:** sound on/off and vibration on/off.
+  - **Exit:** closes the app.
 
 ## Core loop
 
@@ -105,8 +112,8 @@ Timer values are starting values, to be tuned in the tryout.
 - The timer bar turns green → yellow → red.
 - A streak counter ("×3 Streak!").
 - Stars fill in one by one at Level end, with a "New best!" tag.
-- Sounds for correct, wrong, time-up and the Star reveal, with a mute button.
-- Optional vibration on a wrong answer.
+- Sounds for correct, wrong, time-up and the Star reveal; sound can be turned off in Settings.
+- Vibration on a wrong answer, where the device supports it; it can be turned off in Settings.
 
 ## Out of scope
 
