@@ -55,7 +55,7 @@ Start-up menu → Main menu → Episode select → Difficulty select → Level s
 7. The Level end screen shows the Stars, score and time, and saves the best of each on the device.
 8. Passing the Level (at least one Star) opens the next one. Any open Level can be replayed.
 
-If the learner leaves the app during a Level (a call, the Home button), the Level pauses and the timer keeps its time. On return a "Paused" card covers the item; "Go on" shows it again. There is no Pause button ([[D-015 Pause When the App Leaves the Screen]]).
+If the learner leaves the app during a Level (a call, the Home button), the Level pauses and the timer keeps its time. On return a "Paused" card covers the item, with three choices: Resume (the item comes back with its time left), Restart (the Level starts again from item 1) and Levels (back to Level select). Restart and Levels save nothing from the stopped play. There is no Pause button ([[D-015 Pause When the App Leaves the Screen]]).
 
 ## Episodes
 

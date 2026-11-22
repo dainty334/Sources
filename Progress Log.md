@@ -9,6 +9,22 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (game code: Paused card choices)
+
+### Done
+
+- Amended [[D-015 Pause When the App Leaves the Screen]] at the researcher's request: the "Paused" card now has Resume, Restart and Levels buttons, styled like the Level end buttons. Restart plays the Level again from item 1; Restart and Levels save nothing from the stopped play.
+- Tests: 2 new automatic tests (108 in all, all passing headless). The APK was rebuilt.
+
+### Decided
+
+- The three choices on the "Paused" card (D-015 amendment).
+
+### Open
+
+- Screenshot 28 (Paused card) still shows the old single "Go on" button. The screenshot tool could not draw while the computer screen was locked; take it again with the screen on.
+- Check the pause on a real phone; still open from before: the release keystore and timer tuning.
+
 ## 2026-11-22 (game code: pause and renderer revisions)
 
 ### Done
