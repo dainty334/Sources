@@ -9,6 +9,24 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-22 (game code: first Android APK)
+
+### Done
+
+- Built the first Android APK of the game: `build/DiviRush.apk` in the game repo (58.6 MB, not kept in Git). Package `com.divirush.game`, version 0.1.0, minimum Android 7.0 (covers Android 10–14), target API 36, for arm64 and armv7 phones. It is debug-signed and checked with apksigner. Tests, tools and the test add-on are not inside.
+- Set up the build as in [[D-014 Android Build Setup]]: the official Godot 4.7.2 Android export templates (checked by SHA-512), the JDK 17 and Android SDK that came with Unity, and Godot's debug keystore.
+- To build again: in the game repo, run Godot with `--headless --path . --export-debug "Android" build/DiviRush.apk`.
+
+### Decided
+
+- [[D-014 Android Build Setup]]: official templates, Unity's JDK and SDK, a debug key for the tryout, and the package name `com.divirush.game`.
+
+### Open
+
+- Install the APK on an Android phone and play it by hand; no phone was connected during this session.
+- Make the release keystore (the researcher keeps its password) before the final build.
+- Tune the 15 s, 10 s and 7 s timers in the tryout.
+
 ## 2026-11-22 (game code: polish)
 
 ### Done

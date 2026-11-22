@@ -27,7 +27,7 @@ The single source of truth for what the game does. The game code and the manuscr
 |---|---|---|
 | Engine | Godot 4.7, Mobile renderer | Pre-proposal |
 | Language | GDScript | [[D-002 Programming Language]] |
-| Output | Android APK | Pre-proposal |
+| Output | Android APK (build setup: [[D-014 Android Build Setup]]) | Pre-proposal |
 | Devices | Android phones and tablets, Android 10–14 | Pre-proposal |
 | Minimum hardware | 2 GB RAM, 150 MB free storage | Pre-proposal |
 | Network | Fully offline once installed | Pre-proposal |
