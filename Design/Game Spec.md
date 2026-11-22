@@ -31,6 +31,7 @@ The single source of truth for what the game does. The game code and the manuscr
 | Devices | Android phones and tablets, Android 10–14 | Pre-proposal |
 | Minimum hardware | 2 GB RAM, 150 MB free storage | Pre-proposal |
 | Network | Fully offline once installed | Pre-proposal |
+| Orientation | Portrait only, designed at 1080 × 1920 | [[D-009 Art Style and Music]] |
 
 ## Screens
 
@@ -40,7 +41,7 @@ Start-up menu → Main menu → Episode select → Difficulty select → Level s
 - **Main menu:** four buttons ([[D-008 Episodes, Difficulty and Scoring]]):
   - **Play:** opens Episode select.
   - **How to Play:** a short screen explaining the rules: tap the correct bubble before the timer ends; 8 of 10 correct earns a Star and opens the next Level.
-  - **Settings:** sound on/off and vibration on/off.
+  - **Settings:** Music on/off, Sound effects on/off, and Vibration on/off.
   - **Exit:** closes the app.
 
 ## Core loop
@@ -108,11 +109,14 @@ Timer values are starting values, to be tuned in the tryout.
 ## Look, sound and controls
 
 - Simple 2D bubble-style graphics; one-tap controls (pre-proposal).
+- **Art style:** flat cartoon: bright colours, rounded shapes, thick dark outlines, big readable numbers ([[D-009 Art Style and Music]]). Assets are SVG plus PNG sprite sheets on a fixed grid, editable in Piskel or Clip Studio Paint EX.
+- **Music:** three original chiptune-style tracks composed in code ([[D-009 Art Style and Music]]): a calm loop for the menus, a faster loop during play, and a short win jingle on the Level end screen. Music has its own on/off switch in Settings.
+- **Lively screens:** floating background bubbles, bouncing buttons and animated stars, so the game is not boring.
 - Bubbles pop when tapped: green with a sparkle for correct, red with a shake for wrong.
 - The timer bar turns green → yellow → red.
 - A streak counter ("×3 Streak!").
 - Stars fill in one by one at Level end, with a "New best!" tag.
-- Sounds for correct, wrong, time-up and the Star reveal; sound can be turned off in Settings.
+- Sound effects for correct, wrong, time-up and the Star reveal; they have their own on/off switch in Settings.
 - Vibration on a wrong answer, where the device supports it; it can be turned off in Settings.
 
 ## Out of scope

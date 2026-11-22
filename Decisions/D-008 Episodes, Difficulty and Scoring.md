@@ -17,7 +17,7 @@ Terms follow [[CONTEXT]] (Episode, Difficulty, Level, Star, Pass).
 Start-up menu → Main menu → Episode select → Difficulty select → Level select → Play. (Start-up menu and Main menu added by the researcher on 2026-11-22, replacing "Home".)
 
 - **Start-up menu:** DiviRush title and a "Tap to Start" prompt; tapping goes to the Main menu.
-- **Main menu:** Play (opens Episode select), How to Play (short rules screen), Settings (sound on/off, vibration on/off), Exit (closes the app).
+- **Main menu:** Play (opens Episode select), How to Play (short rules screen), Settings (Music on/off, Sound effects on/off, Vibration on/off; see [[D-009 Art Style and Music]]), Exit (closes the app).
 
 Four Episodes, each with three Difficulties (Easy, Medium, Hard) of five Levels: 15 Levels per Episode, 60 in total. Every Level has 10 items ([[D-007 Division Range and Level Length]]).
 
