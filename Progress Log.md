@@ -21,10 +21,16 @@ Newest entry first. Each entry records what was done, what was decided, and what
 - [[D-022 Main Menu Home Dashboard]]: a home dashboard on its own candy sky, with no title.
 - [[D-023 Trophies and My Records]]: twelve Trophies for progress, accuracy and practice (none for speed), a banner on Level end, and a My Records screen of game records; new terms Trophy and My Records added to [[CONTEXT]].
 
+### Built later the same day
+
+- D-022: the Main menu is now a home dashboard on its own candy sky (pink to lavender, floating numbers 1–10 and ÷ signs), with no title: a small floating logo, a "My progress" card, a big breathing Play button, four icon tiles (How to Play, Trophies, My Records, Settings) and a small Exit. Two new icons were drawn (a Trophy and a bar chart).
+- D-023: the twelve Trophies, a "Trophy earned!" banner on Level end, a Trophies screen and a My Records screen. Each play now saves Levels played, correct answers, best streak and time played in `user://save.cfg` (save layout version 2; older saves still load). Trophies already earned by saved bests are given quietly when the game starts.
+- Tests: 12 new automatic tests (147 in all, all passing headless). New screenshots 30 (Trophies) and 31 (My Records); 02, 12 and 29 taken again. The APK was rebuilt.
+
 ### Open
 
-- Build D-022 and D-023, then take the screenshots again.
 - *Assumed*: "remove the Title" keeps the small ÷ logo on the Main menu; the researcher may ask to remove it too.
+- Try the Trophies and My Records on a phone.
 
 ## 2026-11-23 (game code: music, backgrounds and Exit revisions)
 
