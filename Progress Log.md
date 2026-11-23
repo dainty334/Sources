@@ -21,7 +21,7 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 ### Open
 
-- Only screenshot 02 (Ana, full body) was taken again; the screen locked part way, so screenshots 29 to 32 still show the head-and-chest mascot and need a retake with the screen on.
+- The first screenshot run failed part way because the screen locked; with the screen on, screenshots 02 (Ana, quiet), 29 (Exit card) and 32 (Migo, tapped, waving and talking) were taken again with the full-body mascot.
 - Check the sway and wave on a phone during the tryout.
 
 ## 2026-11-23 (Main menu play-first layout raised)
