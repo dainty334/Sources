@@ -9,6 +9,20 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (Main menu play-first layout raised)
+
+### Done
+
+- The researcher asked for a cleaner Main menu and for drafts. Three arrangements were drawn as phone mockups: A (one hero card), B (play first with a bottom bar) and C (center stage).
+
+### Decided
+
+- [[D-025 Main Menu Play-First Layout]]: B. Count pills and an Exit door along the top, the mascot in the middle with its bubble above, one huge Play, and How to Play, Trophies, My Records and Settings in one bottom bar. At the researcher's request, the mascot's bubble shows only when the mascot is tapped, then fades away.
+
+### Open
+
+- Build D-025, then take the Main menu screenshots again.
+
 ## 2026-11-23 (talking mascots raised)
 
 ### Done
