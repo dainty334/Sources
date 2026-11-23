@@ -43,7 +43,8 @@ Start-up menu → Main menu → Episode select → Difficulty select → Level s
   - **How to Play:** a short screen explaining the rules: tap the correct bubble before the timer ends; 8 of 10 correct earns a Star and opens the next Level.
   - **Settings:** Music on/off, Sound effects on/off, and Vibration on/off.
   - **Exit:** asks first with a "Leave DiviRush?" card (big green Stay, pink Exit); Exit saves and closes the app. Android Back on the Start-up menu shows the same card ([[D-021 Exit Confirmation]]).
-- **Main menu look** ([[D-017 Main Menu Look]]): a big floating logo with a twinkling sparkle, the DIVIRUSH title with letters that bounce in and wave, the "Quick-tap division!" tagline, and a white pill with the learner's total Stars (earned / 180). The four buttons stand straight and lined up, each with a drawn icon (play arrow, question mark, gear, door); only Play breathes gently.
+- **Main menu look** ([[D-022 Main Menu Home Dashboard]], replacing most of [[D-017 Main Menu Look]]): a home dashboard on its own candy sky (pink to lavender, floating numbers and ÷ signs), with no title: a small floating ÷ logo, a "My progress" card (Stars of 180, Trophies of 12, Levels passed of 60), one big breathing Play button, a 2 × 2 grid of icon tiles (How to Play, Trophies, My Records, Settings), and a small Exit at the bottom.
+- **Trophies** and **My Records** ([[D-023 Trophies and My Records]]): twelve Trophies for progress, accuracy and practice, shown on a Trophies screen (grey with their goal until earned) and announced by a banner on the Level end screen; My Records shows the learner's game records (Stars, Levels passed and played, correct answers, best streak, time played), not grades.
 
 ## Core loop
 
@@ -148,6 +149,7 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 - Revision settled and built on 2026-11-23: a livelier, lined-up Main menu ([[D-017 Main Menu Look]]).
 - Revision settled and built on 2026-11-23: CC0 recorded music in place of the code-made music ([[D-018 Background Music]]). The researcher should listen to the win jingle and may pick another Kenney tune.
 - Revision settled and built on 2026-11-23: recorded CC0 sound effects in place of the code-made beeps ([[D-019 Sound Effects]]). The researcher should listen and may swap any of the six.
+- Revisions settled on 2026-11-23, not yet built: the Main menu home dashboard ([[D-022 Main Menu Home Dashboard]]) and Trophies and My Records ([[D-023 Trophies and My Records]]).
 - Revisions settled and built on 2026-11-23: a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.

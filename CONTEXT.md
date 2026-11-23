@@ -30,3 +30,11 @@ _Avoid_: medal, badge, rating
 **Pass**:
 Finishing a Level with at least one Star. Passing a Level is what unlocks the next one.
 _Avoid_: clear, complete, win
+
+**Trophy**:
+One of twelve game rewards for progress, accuracy and practice, earned once and kept ([[D-023 Trophies and My Records]]). A Trophy is a game reward, not a measure of the learner's mathematics achievement.
+_Avoid_: achievement, badge, medal
+
+**My Records**:
+The screen of the learner's game records: Stars, Levels passed and played, correct answers, best streak and time played ([[D-023 Trophies and My Records]]). Records of play, not grades.
+_Avoid_: stats, scores, report, grades

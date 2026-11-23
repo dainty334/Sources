@@ -9,6 +9,23 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (Main menu dashboard, Trophies and My Records raised)
+
+### Done
+
+- Pushed both repos at the researcher's OK.
+- The researcher asked for a better Main menu look and background (it matched the Start-up menu), achievements and learner stats built into it, a clean look, and no title on the Main menu. Checked the vault: "achievement" in the manuscript means learning achievement, and Chapter 1 says game records are not a measure of it, so the rewards are called Trophies. Searched the web for design guidance on children's menus and on badges in learning.
+
+### Decided
+
+- [[D-022 Main Menu Home Dashboard]]: a home dashboard on its own candy sky, with no title.
+- [[D-023 Trophies and My Records]]: twelve Trophies for progress, accuracy and practice (none for speed), a banner on Level end, and a My Records screen of game records; new terms Trophy and My Records added to [[CONTEXT]].
+
+### Open
+
+- Build D-022 and D-023, then take the screenshots again.
+- *Assumed*: "remove the Title" keeps the small ÷ logo on the Main menu; the researcher may ask to remove it too.
+
 ## 2026-11-23 (game code: music, backgrounds and Exit revisions)
 
 ### Done
