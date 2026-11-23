@@ -9,6 +9,22 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (game code: Main menu revision)
+
+### Done
+
+- Checked the Main menu against the other screens at the researcher's request ("make it more exciting and visually align"). Found: the four buttons rock on separate timers and look crooked; the logo is smaller than on the Start-up menu and the tagline is missing; a wide empty band is left at the bottom; the buttons have no icons while the Settings rows do.
+- Built [[D-017 Main Menu Look]]: four new icons were drawn with the art tool (play arrow, question mark, gear, door); the Main menu now has a floating logo with a sparkle every 3 s, a title whose letters bounce in and wave, the tagline, a total-Stars pill, and four straight buttons with icons where only Play breathes.
+- Tests: 8 new automatic tests (116 in all, all passing headless). Screenshot 02 was taken again; the other screenshots are unchanged. The APK was rebuilt.
+
+### Decided
+
+- [[D-017 Main Menu Look]]: straight, lined-up buttons with drawn icons, only Play breathing; a big floating logo with a sparkle, a waving title and the tagline; a total-Stars pill (earned / 180).
+
+### Open
+
+- See the new Main menu move on a real phone; still open from before: the pause check on a phone, the release keystore and timer tuning.
+
 ## 2026-11-23 (game code: Paused card choices)
 
 ### Done
