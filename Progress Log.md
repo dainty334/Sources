@@ -9,6 +9,21 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (full-body moving mascots)
+
+### Done
+
+- The researcher asked for the mascot to be shown full body and moving. Built the same day: Ana and Migo are now drawn from head to toe in five parts (body and legs, two arms, head smiling, head talking), 520 pixels tall. When idle they breathe and sway from the feet; a tap makes one arm wave hello while the line is typed. The old float is removed. 155 automatic tests pass; the APK was rebuilt.
+
+### Decided
+
+- [[D-026 Full-Body Moving Mascots]]: school uniform (Ana a navy skirt, Migo navy shorts, white socks, black shoes); breathe and sway when idle; wave hello on a tap; about 520 pixels tall with the bubble above.
+
+### Open
+
+- Only screenshot 02 (Ana, full body) was taken again; the screen locked part way, so screenshots 29 to 32 still show the head-and-chest mascot and need a retake with the screen on.
+- Check the sway and wave on a phone during the tryout.
+
 ## 2026-11-23 (Main menu play-first layout raised)
 
 ### Done
