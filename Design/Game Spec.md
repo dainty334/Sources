@@ -128,13 +128,13 @@ Missing-number items in Episode 4 ([[D-013 Episode 4 Levels and Missing-Number I
 
 - Simple 2D bubble-style graphics; one-tap controls (pre-proposal).
 - **Art style:** flat cartoon: bright colours, rounded shapes, thick dark outlines, big readable numbers ([[D-009 Art Style and Music]]). Assets are SVG plus PNG sprite sheets on a fixed grid, editable in Piskel or Clip Studio Paint EX.
-- **Music:** three free CC0 recordings ([[D-018 Background Music]]): a calm loop for the menus ("Home": piano, flute and strings) and a livelier loop during play ("Picnic": saxophone, vibraphone and strings), both by heartade, and a short saxophone win jingle by Kenney on the Level end screen. Music has its own on/off switch in Settings. The sound effects stay chiptune sounds composed in code ([[D-009 Art Style and Music]]).
+- **Music:** three free CC0 recordings ([[D-018 Background Music]]): a calm loop for the menus ("Home": piano, flute and strings) and a livelier loop during play ("Picnic": saxophone, vibraphone and strings), both by heartade, and a short saxophone win jingle by Kenney on the Level end screen. Music has its own on/off switch in Settings.
 - **Lively screens:** floating background bubbles, bouncing buttons and animated stars, so the game is not boring.
 - Bubbles pop when tapped: green with a sparkle for correct, red with a shake for wrong.
 - The timer bar turns green → yellow → red.
 - A streak counter ("×3 Streak!").
 - Stars fill in one by one at Level end, with a "New best!" tag.
-- Sound effects for correct, wrong, time-up and the Star reveal; they have their own on/off switch in Settings.
+- Sound effects for the button tap, correct, wrong, time-up, the Star reveal and the bubble pop: recorded CC0 sounds from Kenney's Interface Sounds ([[D-019 Sound Effects]]); they have their own on/off switch in Settings.
 - Vibration on a wrong answer, where the device supports it; it can be turned off in Settings.
 
 ## Out of scope
@@ -147,5 +147,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 - Revisions settled and built on 2026-11-22: a Level pauses when the app leaves the screen, with a "Paused" card and the time kept ([[D-015 Pause When the App Leaves the Screen]]); the game uses the Compatibility renderer ([[D-016 Renderer for Low-Cost Phones]]).
 - Revision settled and built on 2026-11-23: a livelier, lined-up Main menu ([[D-017 Main Menu Look]]).
 - Revision settled and built on 2026-11-23: CC0 recorded music in place of the code-made music ([[D-018 Background Music]]). The researcher should listen to the win jingle and may pick another Kenney tune.
+- Revision settled and built on 2026-11-23: recorded CC0 sound effects in place of the code-made beeps ([[D-019 Sound Effects]]). The researcher should listen and may swap any of the six.
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.

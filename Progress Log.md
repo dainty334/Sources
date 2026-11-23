@@ -9,6 +9,25 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (game code: sound effects revision)
+
+### Done
+
+- The researcher found the click sound robotic in the menus and in a Level. All six sound effects came from the same square-wave code, so all six were replaced.
+- Downloaded, with the researcher's OK, Kenney's "Interface Sounds" (CC0, 834.5 KB) and picked one sound for each: tap `select_002`, correct `confirmation_001`, wrong `error_006`, time-up `minimize_006`, Star `glass_001`, pop `drop_002`. The file names in the game stayed the same, so no game code changed.
+- `tools/convert_music.sh` became `tools/convert_audio.sh` and now also makes the sound effects (loudness set, peaks limited). `tools/build_audio.gd` was removed: nothing in the game is composed in code any more.
+- Tests: 3 new automatic tests (122 in all, all passing headless). The APK was rebuilt.
+- Every candidate sound is in the game folder's `build/listen/sfx/` for listening (not part of the game; `build/` is ignored by Git and, through a `.gdignore` file, by Godot).
+
+### Decided
+
+- [[D-019 Sound Effects]]: all six sound effects from Kenney's Interface Sounds; [[D-009 Art Style and Music]] and [[D-018 Background Music]] note the change.
+
+### Open
+
+- Listen to the six sounds in the game and swap any that do not fit (one line each in the tool).
+- Credit Kenney's Interface Sounds in the manuscript, with the music credits.
+
 ## 2026-11-23 (game code: background music revision)
 
 ### Done

@@ -34,7 +34,7 @@ Raised on 2026-11-23 as a game revision: the researcher found the background mus
 - **Menu loop:** "Children's Game Music 3 – Home" by heartade (piano, flute, strings).
 - **Play loop:** "Children's Game Music 1 – Picnic" by heartade (saxophone, vibraphone, strings).
 - **Win jingle:** Kenney's "Music Jingles", saxophone tune 02 (`jingles_SAX02.ogg`), chosen to match the saxophone in Picnic.
-- The sound effects stay as composed in code (D-009).
+- The sound effects stay as composed in code (D-009). *(Later the same day, [[D-019 Sound Effects]] replaced them with recorded CC0 sounds, and `tools/convert_music.sh` became `tools/convert_audio.sh`.)*
 
 **How it is made** (the developer's working choices):
 - The files are kept as OGG in the game (about 2.2 MB in all); the large downloaded WAVs are not kept.

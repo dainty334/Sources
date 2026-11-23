@@ -19,7 +19,8 @@ tags: [divirush, decision, game-design, art, audio]
 - **Music tracks:** three: a calm loop for the menus, a faster loop during play, and a short win jingle on the Level end screen.
 - **Settings switches:** Music on/off and Sound effects on/off are separate, plus Vibration on/off.
 - **Music source:** original chiptune-style tracks composed in code, so there are no licence issues. They can later be replaced by CC0 music or the researcher's own tracks without code changes.
-  - **Changed on 2026-11-23 by [[D-018 Background Music]]:** the three music tracks are now free CC0 recordings (heartade's "Home" and "Picnic", and a Kenney jingle), because the code-made music sounded robotic. The sound effects are still composed in code.
+  - **Changed on 2026-11-23 by [[D-018 Background Music]]:** the three music tracks are now free CC0 recordings (heartade's "Home" and "Picnic", and a Kenney jingle), because the code-made music sounded robotic.
+  - **Changed on 2026-11-23 by [[D-019 Sound Effects]]:** the six sound effects are now recorded CC0 sounds from Kenney's Interface Sounds, because the code-made ones also sounded robotic. Nothing in the game is composed in code any more.
 - **Sample:** ![[game-spec-img01.svg]] (Play screen, approved style direction pending the researcher's feedback).
 
 **Applies to:** [[Game Spec]] (Look, sound and controls) and all game assets.
