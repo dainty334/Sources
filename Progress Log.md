@@ -9,6 +9,22 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (bigger mascots with more moves)
+
+### Done
+
+- The researcher asked for more animation for the mascot and for its art to be fixed, because it was too small. Built the same day: Ana and Migo are now about 780 pixels tall, drawn at that size so they stay sharp, with chunkier arms, legs and top, a pink backpack behind the shoulders, shiny shoes and a shine on the hair. The head is drawn in layers, so the mascot blinks every 2 to 5 seconds, and while talking the head nods and tilts and the eyebrows lift. The arms swing gently when idle; the waving arm stops swinging while it waves. The mascot drops in with a bounce when the Main menu opens. The speech bubble now floats over the sky above the head. 159 automatic tests pass; the APK was rebuilt.
+- Screenshots 02 (Ana, quiet), 29 (Exit card) and 32 (Migo, tapped, waving and talking) were taken again; the first run caught the Start-up menu for 02, so 02 was taken in a second run.
+
+### Decided
+
+- [[D-027 Bigger Mascots With More Moves]]: about 1.5 times bigger with the bubble floating above the head; chunkier body, backpack, hair shine and lifting eyebrows; blinking, nodding while talking and swinging arms; a bounce when the Main menu opens.
+
+### Open
+
+- The backpack shows only a little between the top and the arms; make it bigger if the researcher wants it to show more.
+- Check the new moves on a phone during the tryout.
+
 ## 2026-11-23 (full-body moving mascots)
 
 ### Done
