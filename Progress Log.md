@@ -19,9 +19,14 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 - [[D-024 Talking Student Mascots]]: Ana and Migo, Filipino Grade 4 learners in school uniform, take turns at the top of the Main menu; their words are typed into a speech bubble with a moving mouth (no voice): a greeting, hints from the learner's progress, and division tips. The Main menu is spaced evenly with no big gap.
 
+### Built later the same day
+
+- D-024: Ana and Migo were drawn with the art tool (two frames each: smiling and talking) and take turns at the top of the Main menu, typing their lines into a speech bubble while their mouths move; tapping shows the next line. The Main menu is now one centred block with even gaps, and the old logo and its sparkle are gone.
+- At the researcher's request, Migo's talking mouth was redrawn plain dark, with no red or pink, because the first drawing looked like lipstick.
+- Tests: 5 new automatic tests (152 in all, all passing headless). Screenshots 02 and 29 taken again, and 32 (Migo) added. The APK was rebuilt.
+
 ### Open
 
-- Build D-024, then take the screenshots again.
 - The names Ana and Migo were taken from the option's example; the researcher may change them.
 
 ## 2026-11-23 (Main menu dashboard, Trophies and My Records raised)
