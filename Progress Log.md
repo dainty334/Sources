@@ -9,6 +9,22 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (music, backgrounds and Exit revisions raised)
+
+### Done
+
+- Pushed both repos (game and vault) at the researcher's OK, so the next work starts a fresh update.
+- The researcher asked for different music and design on the Main menu, the level selection and the gameplay, so the game does not repeat, and for a confirmation before Exit. Checked more CC0 music on OpenGameArt.org and downloaded, with the researcher's OK, "Happy Clappy Loop", "Happy Vibes", "Cozy Puzzle In-Game 2" and "Children's Game Music 4 – Activity".
+
+### Decided
+
+- [[D-020 Music and Backgrounds by Area and Episode]]: one track for the Main menu area, one for the selection screens, and one for each Episode during play; the Main menu area keeps its sky, the selection screens get their own, and each Episode gets its own world (day, meadow, sunset, night).
+- [[D-021 Exit Confirmation]]: a "Leave DiviRush?" card with Stay and Exit, also for Android Back on the Start-up menu.
+
+### Open
+
+- Build D-020 and D-021, then take the screenshots again.
+
 ## 2026-11-23 (game code: sound effects revision)
 
 ### Done
