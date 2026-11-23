@@ -22,7 +22,7 @@ Newest entry first. Each entry records what was done, what was decided, and what
 ### Open
 
 - Built D-025 the same day: count pills and a small pink Exit at the top, the mascot floating in the middle with its bubble hidden until tapped, one huge Play, and a white bottom bar with How to Play, Trophies, My Records and Settings. 152 automatic tests pass; the APK was rebuilt.
-- The Main menu screenshots (02, 29, 32) could not be taken again: the computer screen was locked or asleep, so the tool saved the same frame many times. They were put back as they were; take them again with the screen on.
+- The first screenshot runs failed because the computer screen was locked or asleep; with the screen on, screenshots 02 (Ana, quiet), 29 (Exit card) and 32 (Migo, tapped and talking) were taken again with the new layout.
 
 ## 2026-11-23 (talking mascots raised)
 
