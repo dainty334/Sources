@@ -9,6 +9,24 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (game code: background music revision)
+
+### Done
+
+- The researcher found the code-made music robotic and asked for better music from the web. Checked free CC0 music on OpenGameArt.org and kenney.nl and confirmed each licence on its page.
+- Downloaded, with the researcher's OK, heartade's "Children's Game Music 3 – Home" and "1 – Picnic" and Kenney's "Music Jingles" (CC0). New tool `tools/convert_music.sh` turns them into the game's three OGG files (2.2 MB in all), with smooth loop joins.
+- The game now plays "Home" on the menus, "Picnic" during play and a saxophone jingle on a passed Level. The music part of `tools/build_audio.gd` and the old WAV music were removed; the sound effects are unchanged (only the pop's tiny noise burst was made again).
+- Tests: 3 new automatic tests (119 in all, all passing headless). The APK was rebuilt.
+
+### Decided
+
+- [[D-018 Background Music]]: menu "Home" and play "Picnic" by heartade, win jingle Kenney saxophone tune 02; [[D-009 Art Style and Music]] notes the change.
+
+### Open
+
+- Listen to the new music on a phone, especially the loop joins and the win jingle (another Kenney tune can be picked in one line of the tool).
+- Credit heartade and Kenney in the manuscript (CC0 does not require it, but it is good practice).
+
 ## 2026-11-23 (game code: Main menu revision)
 
 ### Done
