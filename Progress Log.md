@@ -9,7 +9,7 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
-## 2026-11-23 (music, backgrounds and Exit revisions raised)
+## 2026-11-23 (game code: music, backgrounds and Exit revisions)
 
 ### Done
 
@@ -21,9 +21,13 @@ Newest entry first. Each entry records what was done, what was decided, and what
 - [[D-020 Music and Backgrounds by Area and Episode]]: one track for the Main menu area, one for the selection screens, and one for each Episode during play; the Main menu area keeps its sky, the selection screens get their own, and each Episode gets its own world (day, meadow, sunset, night).
 - [[D-021 Exit Confirmation]]: a "Leave DiviRush?" card with Stay and Exit, also for Android Back on the Start-up menu.
 
+- Built D-020: six music loops (made by `tools/convert_audio.sh`, all at the same loudness) and a new `SkyBackground` with six looks, replacing the one bubble sky. Built D-021: a "Leave DiviRush?" card on Exit and on Android Back from the Start-up menu; the "Paused" card now shares its look.
+- Tests: 13 new automatic tests (135 in all, all passing headless). The APK was rebuilt (64.8 MB).
+
 ### Open
 
-- Build D-020 and D-021, then take the screenshots again.
+- The screenshots could not be taken again: the computer screen was locked or asleep, so the screenshot tool saved the same frame many times. They were put back as they were; take them again with the screen on (`29_exit_confirm` is new).
+- Listen to the new music and look at the new skies on a phone.
 
 ## 2026-11-23 (game code: sound effects revision)
 

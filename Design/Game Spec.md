@@ -42,7 +42,7 @@ Start-up menu → Main menu → Episode select → Difficulty select → Level s
   - **Play:** opens Episode select.
   - **How to Play:** a short screen explaining the rules: tap the correct bubble before the timer ends; 8 of 10 correct earns a Star and opens the next Level.
   - **Settings:** Music on/off, Sound effects on/off, and Vibration on/off.
-  - **Exit:** closes the app.
+  - **Exit:** asks first with a "Leave DiviRush?" card (big green Stay, pink Exit); Exit saves and closes the app. Android Back on the Start-up menu shows the same card ([[D-021 Exit Confirmation]]).
 - **Main menu look** ([[D-017 Main Menu Look]]): a big floating logo with a twinkling sparkle, the DIVIRUSH title with letters that bounce in and wave, the "Quick-tap division!" tagline, and a white pill with the learner's total Stars (earned / 180). The four buttons stand straight and lined up, each with a drawn icon (play arrow, question mark, gear, door); only Play breathes gently.
 
 ## Core loop
@@ -128,8 +128,8 @@ Missing-number items in Episode 4 ([[D-013 Episode 4 Levels and Missing-Number I
 
 - Simple 2D bubble-style graphics; one-tap controls (pre-proposal).
 - **Art style:** flat cartoon: bright colours, rounded shapes, thick dark outlines, big readable numbers ([[D-009 Art Style and Music]]). Assets are SVG plus PNG sprite sheets on a fixed grid, editable in Piskel or Clip Studio Paint EX.
-- **Music:** three free CC0 recordings ([[D-018 Background Music]]): a calm loop for the menus ("Home": piano, flute and strings) and a livelier loop during play ("Picnic": saxophone, vibraphone and strings), both by heartade, and a short saxophone win jingle by Kenney on the Level end screen. Music has its own on/off switch in Settings.
-- **Lively screens:** floating background bubbles, bouncing buttons and animated stars, so the game is not boring.
+- **Music:** free CC0 recordings, one for each area of the game and one for each Episode during play, so the music does not repeat ([[D-018 Background Music]], [[D-020 Music and Backgrounds by Area and Episode]]): "Happy Clappy Loop" (piano) in the Main menu area, "Home" on the selection screens, and during play "Picnic" (Episode 1), "Happy Vibes" (Episode 2), "Cozy Puzzle In-Game 2" (Episode 3) and "Activity" (Episode 4); a short saxophone win jingle by Kenney on a passed Level. Music has its own on/off switch in Settings.
+- **Lively screens:** floating background shapes, bouncing buttons and animated stars, so the game is not boring. Each area and each Episode has its own sky ([[D-020 Music and Backgrounds by Area and Episode]]): blue with bubbles in the Main menu area; teal with stars and ÷ signs on the Episode and Difficulty select screens; and an Episode world on Level select, Play and Level end: day sky with a sun (Episode 1), green meadow with leaves and hills (Episode 2), sunset with sparkles (Episode 3), and night with twinkling stars and a moon (Episode 4).
 - Bubbles pop when tapped: green with a sparkle for correct, red with a shake for wrong.
 - The timer bar turns green → yellow → red.
 - A streak counter ("×3 Streak!").
@@ -148,6 +148,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 - Revision settled and built on 2026-11-23: a livelier, lined-up Main menu ([[D-017 Main Menu Look]]).
 - Revision settled and built on 2026-11-23: CC0 recorded music in place of the code-made music ([[D-018 Background Music]]). The researcher should listen to the win jingle and may pick another Kenney tune.
 - Revision settled and built on 2026-11-23: recorded CC0 sound effects in place of the code-made beeps ([[D-019 Sound Effects]]). The researcher should listen and may swap any of the six.
-- Revisions settled on 2026-11-23, not yet built: a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
+- Revisions settled and built on 2026-11-23 (screenshots still to be taken again): a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.
