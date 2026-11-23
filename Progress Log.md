@@ -9,6 +9,21 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-23 (talking mascots raised)
+
+### Done
+
+- Pushed both repos at the researcher's OK. The researcher asked for a neater Main menu and a talking student mascot.
+
+### Decided
+
+- [[D-024 Talking Student Mascots]]: Ana and Migo, Filipino Grade 4 learners in school uniform, take turns at the top of the Main menu; their words are typed into a speech bubble with a moving mouth (no voice): a greeting, hints from the learner's progress, and division tips. The Main menu is spaced evenly with no big gap.
+
+### Open
+
+- Build D-024, then take the screenshots again.
+- The names Ana and Migo were taken from the option's example; the researcher may change them.
+
 ## 2026-11-23 (Main menu dashboard, Trophies and My Records raised)
 
 ### Done
