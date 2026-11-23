@@ -9,6 +9,20 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-24 (balanced mascots with five fingers)
+
+### Done
+
+- The researcher asked for five fingers and for the head, body and legs to be balanced for both characters. Built: the head is drawn 18% smaller, the top and the skirt or shorts sit higher, and the legs are longer, so Ana and Migo are about 3.5 heads tall at the same 780-pixel height. Each hand now has five fingers held loosely together; while waving, the right hand opens wide with all five fingers spread, then closes again. Both share the same build. 159 automatic tests pass; the APK was rebuilt.
+
+### Decided
+
+- [[D-028 Balanced Mascots With Five Fingers]]: about 3.5 heads tall, five-finger hands that open wide when waving, the same build for both.
+
+### Open
+
+- Only screenshot 02 (Ana) was taken again; the screen locked after it, so 29 (Exit card) and 32 (Migo waving) still show the D-027 mascot and need a retake with the screen on.
+
 ## 2026-11-23 (bigger mascots with more moves)
 
 ### Done
