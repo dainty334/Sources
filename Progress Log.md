@@ -26,8 +26,11 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 ### Open
 
-- The screenshots could not be taken again: the computer screen was locked or asleep, so the screenshot tool saved the same frame many times. They were put back as they were; take them again with the screen on (`29_exit_confirm` is new).
 - Listen to the new music and look at the new skies on a phone.
+
+### Later the same day
+
+- The first screenshot runs failed because the computer screen was locked or asleep (the tool saved the same frame many times); those pictures were put back. With the screen on, screenshots 05–28 were taken again with the new skies, and `29_exit_confirm` shows the "Leave DiviRush?" card.
 
 ## 2026-11-23 (game code: sound effects revision)
 

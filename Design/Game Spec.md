@@ -148,6 +148,6 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 - Revision settled and built on 2026-11-23: a livelier, lined-up Main menu ([[D-017 Main Menu Look]]).
 - Revision settled and built on 2026-11-23: CC0 recorded music in place of the code-made music ([[D-018 Background Music]]). The researcher should listen to the win jingle and may pick another Kenney tune.
 - Revision settled and built on 2026-11-23: recorded CC0 sound effects in place of the code-made beeps ([[D-019 Sound Effects]]). The researcher should listen and may swap any of the six.
-- Revisions settled and built on 2026-11-23 (screenshots still to be taken again): a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
+- Revisions settled and built on 2026-11-23: a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
 
 The data file format was settled in [[D-010 Game Code Foundations]], the Medium and Hard wrong answers and the Episode 2 Levels in [[D-011 Medium and Hard Wrong Answers]], the Episode 3 Levels in [[D-012 Episode 3 Levels]], and the Episode 4 Levels and missing-number wrong answers in [[D-013 Episode 4 Levels and Missing-Number Items]], on 2026-11-22.
