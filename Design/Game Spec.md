@@ -150,7 +150,7 @@ No storyline, chapters or mini-games; no multiplayer or online play; no accounts
 - Revision settled and built on 2026-11-23: a livelier, lined-up Main menu ([[D-017 Main Menu Look]]).
 - Revision settled and built on 2026-11-23: CC0 recorded music in place of the code-made music ([[D-018 Background Music]]). The researcher should listen to the win jingle and may pick another Kenney tune.
 - Revision settled and built on 2026-11-23: recorded CC0 sound effects in place of the code-made beeps ([[D-019 Sound Effects]]). The researcher should listen and may swap any of the six.
-- Revision settled on 2026-11-23, not yet built: a cleaner, play-first Main menu layout with a bottom bar, where the mascot talks only when tapped ([[D-025 Main Menu Play-First Layout]]).
+- Revision settled and built on 2026-11-23 (Main menu screenshots still to be taken again): a cleaner, play-first Main menu layout with a bottom bar, where the mascot talks only when tapped ([[D-025 Main Menu Play-First Layout]]).
 - Revision settled and built on 2026-11-23: talking student mascots on a neater Main menu ([[D-024 Talking Student Mascots]]).
 - Revisions settled and built on 2026-11-23: the Main menu home dashboard ([[D-022 Main Menu Home Dashboard]]) and Trophies and My Records ([[D-023 Trophies and My Records]]).
 - Revisions settled and built on 2026-11-23: a different music track and background for each area of the game and for each Episode during play ([[D-020 Music and Backgrounds by Area and Episode]]), and a "Leave DiviRush?" card before the game closes ([[D-021 Exit Confirmation]]).
