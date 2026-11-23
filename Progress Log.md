@@ -21,7 +21,7 @@ Newest entry first. Each entry records what was done, what was decided, and what
 
 ### Open
 
-- Only screenshot 02 (Ana) was taken again; the screen locked after it, so 29 (Exit card) and 32 (Migo waving) still show the D-027 mascot and need a retake with the screen on.
+- The first screenshot run caught only 02 (Ana) because the screen locked; with the screen on, 29 (Exit card) and 32 (Migo waving with his hand open) were taken again with the balanced mascot.
 
 ## 2026-11-23 (bigger mascots with more moves)
 
