@@ -9,6 +9,33 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-24 (Profile, Nickname and new bottom bar)
+
+### Done
+
+- Built [[D-030 Profile, Nickname and New Bottom Bar]]:
+  - **Welcome screen:** a first-time player sees it once after "Tap to Start". Ana and Migo say hello, the learner types a Nickname (with the tip "Use a nickname, not your full name.") and picks a Buddy, and Next opens the Main menu.
+  - **Main menu:** a Profile pill at the top left with the Buddy's face and the Nickname. The bottom bar is How to Play, Trophies, Settings and Exit. The count pills, My Records and the top Exit button are gone. Only the chosen Buddy's mascot shows; with Both, Ana and Migo take turns.
+  - **Profile:** the big face, the Nickname with a pencil to change it, the Buddy picker, and the counts of Stars, Trophies and Levels passed.
+  - **Trophies:** Trophies and Records tabs. Tapping a Trophy shows its goal and the day it was earned, or how far along the learner is.
+  - **Save file:** version 3 keeps the Nickname, the Buddy and each Trophy's date. Older saves still load, and their Trophies say "Earned before dates were kept".
+- A bug was found and fixed: the mascot pictures were looked up as "mascot_Ana" while the files are "mascot_ana". Windows does not mind, but an Android build would not find them.
+- The screenshot tool now waits for the computer's own save to load before it sets the example data, so that data no longer mixes in.
+- 185 automatic tests pass, and the APK was rebuilt.
+- Screenshots:
+  - New: 33 (Welcome), 34 (Profile), 35 (Trophy card) and 31 (Records tab, in place of My Records).
+  - Taken again with the screen on: all the others, including 29 (Exit card) and 32 (Migo waving), which were still open from D-029.
+
+### Decided
+
+- [[D-030 Profile, Nickname and New Bottom Bar]]: a Nickname and a Buddy kept only on the phone; a Profile at the top left; Trophies with a Records tab and dated Trophy cards; How to Play, Trophies, Settings and Exit in the bottom bar.
+
+### Open
+
+- Phone tryout: check that the keyboard does not cover the Nickname box on the Welcome screen and the Nickname card, and check the new screens on a small phone.
+- Whether the mascots should greet the learner by Nickname ("Hi, Bea!") is not decided.
+- "Start over" (reset) still needs its own grill.
+
 ## 2026-11-24 (refined mascot arms and overhead wave)
 
 ### Done

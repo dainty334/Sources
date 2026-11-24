@@ -60,7 +60,8 @@ Raised on 2026-11-24 as a game revision: the researcher asked for a first-time n
 **Working choices** (the developer's, may be tuned):
 - The nickname, the buddy and each Trophy's earned date are saved in the same `user://save.cfg` ([[D-010 Game Code Foundations]]), as save layout version 3. Older files still load.
 - The small faces are cut from the mascots' own head, eye and mouth pictures.
-- On the Welcome screen, the mascot whose turn it is greets the learner.
+- On the Welcome screen, Ana and Migo greet the learner together ("Hi! We're Ana and Migo. Welcome to DiviRush!"), because the Buddy is not picked yet.
+- The pencil is a new icon. The Records tab keeps the old My Records numbers and bars unchanged.
 
 **Reason:**
 - A buddy choice lets each child pick the classmate they like, without asking a child's gender.
