@@ -9,6 +9,21 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-24 (refined mascot arms and overhead wave)
+
+### Done
+
+- The researcher asked for the mascot art to be fixed further. Built in game commit `d4f721d`: the arms are one smooth outline from sleeve to a five-finger hand and taper towards the wrist; the uniforms were redrawn; on a tap the right arm lifts above the head, the elbow bends and the forearm waves three times, then the arm lowers to its idle swing. The bent arm uses a shared 19-picture sheet. Checked afterwards: every new code line has a comment, and all 159 automatic tests pass. The APK was rebuilt.
+
+### Decided
+
+- [[D-029 Refined Mascot Arms And Overhead Wave]]: shaped arms, clearer hands, redrawn uniforms, and an overhead wave from the elbow.
+
+### Open
+
+- Only screenshot 02 (Ana) was taken again, because the screen was locked. 29 (Exit card) and 32 (Migo waving) still show the D-028 drawing and need retaking with the screen on.
+- The overhead wave should be watched on a phone during the phone tryout.
+
 ## 2026-11-24 (balanced mascots with five fingers)
 
 ### Done
