@@ -73,7 +73,7 @@ Every commit is part of the project's history. Write it as a record of what chan
 Rules for both:
 
 - **Branch:** commit directly on `main`. Create no other branches.
-- **Size:** split each update into 5–6 commits at most, each one a single coherent change.
+- **Size:** split each update into 5–9 commits, each one a single coherent change.
 - **Message:** basic English, a summary of the change, at most 2 sentences.
 - **Voice:** describe the project itself ("Add level unlock rules for the Medium stage."). Write about the change, never about the people who asked for or made it.
 - **Authorship:** the commit carries only the committer's own identity. Add no `Co-authored-by` or other attribution trailer.
