@@ -35,6 +35,18 @@ _Avoid_: clear, complete, win
 One of twelve game rewards for progress, accuracy and practice, earned once and kept ([[D-023 Trophies and My Records]]). A Trophy is a game reward, not a measure of the learner's mathematics achievement.
 _Avoid_: achievement, badge, medal
 
-**My Records**:
-The screen of the learner's game records: Stars, Levels passed and played, correct answers, best streak and time played ([[D-023 Trophies and My Records]]). Records of play, not grades.
-_Avoid_: stats, scores, report, grades
+**Records**:
+The learner's game records: Stars, Levels passed and played, correct answers, best streak and time played ([[D-023 Trophies and My Records]]). Records of play, not grades. Since [[D-030 Profile, Nickname and New Bottom Bar]], a tab on the Trophies screen.
+_Avoid_: My Records, stats, scores, report, grades
+
+**Profile**:
+The learner's own screen, opened from the pill at the top left of the Main menu: the Nickname, the Buddy, and the counts of Stars, Trophies and Levels passed ([[D-030 Profile, Nickname and New Bottom Bar]]). Kept only on the learner's phone; it is not an account.
+_Avoid_: account, user, login
+
+**Nickname**:
+The short name a learner types the first time they play, 1 to 12 characters, shown on the Profile ([[D-030 Profile, Nickname and New Bottom Bar]]). A nickname, never the learner's full name.
+_Avoid_: username, real name
+
+**Buddy**:
+The learner's choice of mascot: Ana, Migo, or Both, taking turns ([[D-030 Profile, Nickname and New Bottom Bar]]).
+_Avoid_: avatar, character, gender
