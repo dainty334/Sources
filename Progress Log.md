@@ -9,6 +9,26 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-24 (Trophy pages, Records tiles and picture lessons)
+
+### Done
+
+- Built [[D-032 Trophy Pages, Records Tiles and Picture Lessons]]:
+  - **Trophies:** 12 to a page, 3 pages, with ◀ 1/3 ▶ under the grid. The arrow turns grey at the ends, and a swipe also turns the page.
+  - **Records:** six colour tiles with an icon, a big number and a name, and "Stars in each Episode" with a badge in each Episode's world colour. A tick and a flame icon were added.
+  - **How to Play:** seven picture lessons taught by the learner's Buddy at a bit over half size, talking in a big speech bubble. The pictures use the real game parts. "Try it!" asks 12 ÷ 3 with no timer and gives the times-table hint after a wrong tap. Nothing is saved, and the points rules are left out.
+  - **First time:** the lessons open once after the Welcome screen.
+- A bug was found and fixed: a right answer bounced its bubble back to full size. In the lessons the bubbles are smaller, so it now springs back to its own size.
+- 212 automatic tests pass, and the APK was rebuilt. All screenshots were taken again, with new ones: 36 (Stars lesson), 37 (Try it!) and 38 (Trophies page 2).
+
+### Decided
+
+- [[D-032 Trophy Pages, Records Tiles and Picture Lessons]]: Trophy pages of 12 with arrows, colour tiles for the Records, and How to Play as picture lessons taught by the Buddy, ending with a practice item.
+
+### Open
+
+- Phone tryout: check that the swipe works with a finger, and that Grade 4 learners follow the lessons. The Buddy's lines can be tuned after watching them.
+
 ## 2026-11-24 (more Trophies, Trophy art and Featured Trophy)
 
 ### Done
