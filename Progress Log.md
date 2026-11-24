@@ -9,6 +9,29 @@ tags: [divirush, log]
 
 Newest entry first. Each entry records what was done, what was decided, and what is still open.
 
+## 2026-11-24 (more Trophies, Trophy art and Featured Trophy)
+
+### Done
+
+- The researcher asked for more achievements, art for each one, a perfect or streak achievement, and a way to show one. Built [[D-031 More Trophies, Trophy Art and Featured Trophy]]:
+  - **New Trophies:** 14, for 26 in all, after the first 12. Among them are Super Streak (30 right in a row across Levels) and Perfect Run (10 of 10 in all 5 Levels of a Difficulty).
+  - **Pictures:** each Trophy has its own drawn picture in a ring coloured by group: gold for progress, blue for accuracy, green for practice. One not yet earned shows its picture in grey with a small lock. The Level end banner shows the new Trophy's picture.
+  - **New saved facts** (save layout version 4):
+    - Levels played but not passed yet, and comebacks, for Try Again;
+    - days played, for Three Days;
+    - the streak carried across Levels, for Super Streak.
+  - **Featured Trophy:** the learner picks one earned Trophy, or None, on the Profile. It shows there and small on the Main menu's Profile pill.
+- 203 automatic tests pass, and the APK was rebuilt. All screenshots were taken again with the screen on. 02, 12, 30, 34 and 35 show the new pictures and the Featured Trophy.
+
+### Decided
+
+- [[D-031 More Trophies, Trophy Art and Featured Trophy]]: 26 Trophies with a picture each, a grey picture and a lock until earned, and a Featured Trophy.
+
+### Open
+
+- Phone tryout: check that the Trophy pictures and the grey look are clear on a small phone, and try the Featured Trophy picker.
+- "Perfect score" was settled as all answers right, not the most points, because points depend on speed (D-023).
+
 ## 2026-11-24 (Profile, Nickname and new bottom bar)
 
 ### Done

@@ -32,7 +32,7 @@ Finishing a Level with at least one Star. Passing a Level is what unlocks the ne
 _Avoid_: clear, complete, win
 
 **Trophy**:
-One of twelve game rewards for progress, accuracy and practice, earned once and kept ([[D-023 Trophies and My Records]]). A Trophy is a game reward, not a measure of the learner's mathematics achievement.
+One of 26 game rewards for progress, accuracy and practice, earned once and kept, each with its own picture ([[D-023 Trophies and My Records]], [[D-031 More Trophies, Trophy Art and Featured Trophy]]). A Trophy is a game reward, not a measure of the learner's mathematics achievement.
 _Avoid_: achievement, badge, medal
 
 **Records**:
@@ -46,6 +46,10 @@ _Avoid_: account, user, login
 **Nickname**:
 The short name a learner types the first time they play, 1 to 12 characters, shown on the Profile ([[D-030 Profile, Nickname and New Bottom Bar]]). A nickname, never the learner's full name.
 _Avoid_: username, real name
+
+**Featured Trophy**:
+The one earned Trophy a learner picks to show on the Profile and on the Main menu's Profile pill, or None ([[D-031 More Trophies, Trophy Art and Featured Trophy]]).
+_Avoid_: badge, showcase
 
 **Buddy**:
 The learner's choice of mascot: Ana, Migo, or Both, taking turns ([[D-030 Profile, Nickname and New Bottom Bar]]).
